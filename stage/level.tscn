@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://stage/grid_map.tscn" type="PackedScene" id=1]
 [ext_resource path="res://player/Canoe.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://stage/scenery/WaterPlaneCollision.tscn" type="PackedScene" id=4]
 [ext_resource path="res://stage/scenery/Condo1.tscn" type="PackedScene" id=5]
 [ext_resource path="res://stage/scenery/clocktower.tscn" type="PackedScene" id=6]
+[ext_resource path="res://characters/claw/ClawArm.tscn" type="PackedScene" id=7]
 
 [node name="Level" type="Spatial"]
 
@@ -15,13 +16,13 @@ data = {
 }
 
 [node name="Canoe" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 160.155, 0.381365, 30.2459 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.81285, 0.381367, 3.39844 )
 
 [node name="Position3D" type="Position3D" parent="Canoe"]
 transform = Transform( 1, 0, 0, 0, 0.940567, 0.339608, 0, -0.339608, 0.940567, 0, 3.35162, 8.24821 )
 
 [node name="MainCamera" type="InterpolatedCamera" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.9418, 0.336175, 0, -0.336175, 0.9418, 160.198, 2.41659, 23.0612 )
+transform = Transform( 1, 0, 0, 0, 0.9418, 0.336175, 0, -0.336175, 0.9418, -5.07405, 7.19302, 23.0612 )
 far = 1000.0
 target = NodePath("../Canoe/Position3D")
 enabled = true
@@ -45,3 +46,11 @@ transform = Transform( 1, 0, 0, 0, 0.824482, 0.565888, 0, -0.565888, 0.824482, 0
 light_energy = 0.4
 light_indirect_energy = 0.4
 directional_shadow_max_distance = 1000.0
+
+[node name="ClawInteractions" type="Spatial" parent="."]
+
+[node name="ClawAppear" type="Spatial" parent="ClawInteractions"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 49.1529, 0, -36.7921 )
+
+[node name="ClawSpatial" parent="ClawInteractions/ClawAppear" instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0 )

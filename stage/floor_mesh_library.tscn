@@ -140,6 +140,8 @@ surfaces/0 = {
 
 [node name="FloorMeshes" type="Spatial"]
 
+[node name="Water" type="MeshInstance" parent="."]
+
 [node name="Water_NWShore" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
 mesh = SubResource( 2 )
