@@ -1,0 +1,31 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl Color_M07
+Ka 0.000000 0.000000 0.000000
+Kd 0.227451 0.227451 0.227451
+Ks 0.330000 0.330000 0.330000
+
+newmtl Wall_Stone
+Ka 0.000000 0.000000 0.000000
+Kd 0.694118 0.729412 0.690196
+Ks 0.330000 0.330000 0.330000
+map_Kd Clocktower/Wall_Stone.png
+
+newmtl Color_M00
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl Wood_Custom
+Ka 0.000000 0.000000 0.000000
+Kd 0.619608 0.447059 0.305882
+Ks 0.330000 0.330000 0.330000
+map_Kd Clocktower/Wood_Custom.png
+
+newmtl FrontColor
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.330000 0.330000 0.330000
+

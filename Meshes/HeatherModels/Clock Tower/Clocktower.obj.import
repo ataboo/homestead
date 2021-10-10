@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Clocktower.obj-22ffd3447ebeda5e9f8f8b7256252a99.mesh"
+
+[deps]
+
+files=[ "res://.import/Clocktower.obj-22ffd3447ebeda5e9f8f8b7256252a99.mesh" ]
+
+source_file="res://Meshes/HeatherModels/Clock Tower/Clocktower.obj"
+dest_files=[ "res://.import/Clocktower.obj-22ffd3447ebeda5e9f8f8b7256252a99.mesh", "res://.import/Clocktower.obj-22ffd3447ebeda5e9f8f8b7256252a99.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
