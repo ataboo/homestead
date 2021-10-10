@@ -35,10 +35,10 @@ transform = Transform( 5, 0, 0, 0, 1, 0, 0, 0, 5, 11.8564, 3.8147e-06, -54.4104 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 177.891, 0, 13.749 )
 
 [node name="clocktower" parent="Scenery" instance=ExtResource( 6 )]
-transform = Transform( -8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, 317.126, -5.95062, -15.2605 )
+transform = Transform( -8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, 317.126, -3.92298, -15.2605 )
 
 [node name="Condo1" parent="Scenery" instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 155.413, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 166.459, 0, 0 )
 
 [node name="Sun" type="DirectionalLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.824482, 0.565888, 0, -0.565888, 0.824482, 0.237442, 92.8351, -0.124687 )
