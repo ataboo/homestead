@@ -2,16 +2,16 @@
 
 [ext_resource path="res://src/WaterPlane.cs" type="Script" id=2]
 
-[sub_resource type="CubeMesh" id=2]
+[sub_resource type="CubeMesh" id=1]
 size = Vector3( 500, 1, 500 )
 
-[sub_resource type="SpatialMaterial" id=1]
+[sub_resource type="SpatialMaterial" id=2]
 flags_transparent = true
-albedo_color = Color( 0.27451, 0.560784, 0.654902, 1 )
+albedo_color = Color( 0.368627, 0.494118, 0.423529, 1 )
 
 [node name="WaterPlane" type="Spatial"]
 script = ExtResource( 2 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
-mesh = SubResource( 2 )
-material/0 = SubResource( 1 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )

@@ -18,7 +18,7 @@ public class WaterPlane : Spatial
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(float delta)
 	{
-		var trailPos = camera.Translation - camera.Transform.basis.z * 50f;
+		var trailPos = camera.Translation - camera.Transform.basis.z * 100f;
 		trailPos.y = startOrigin.y;
 
 		Translation = trailPos;

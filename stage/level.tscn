@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://stage/grid_map.tscn" type="PackedScene" id=1]
 [ext_resource path="res://player/Canoe.tscn" type="PackedScene" id=2]
@@ -7,6 +7,66 @@
 [ext_resource path="res://stage/scenery/Condo1.tscn" type="PackedScene" id=5]
 [ext_resource path="res://stage/scenery/clocktower.tscn" type="PackedScene" id=6]
 [ext_resource path="res://characters/claw/ClawArm.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/ClawInteractions/ClawScene1.cs" type="Script" id=8]
+[ext_resource path="res://stage/scenery/TreeLine1.tscn" type="PackedScene" id=9]
+[ext_resource path="res://stage/scenery/TreeLine2.tscn" type="PackedScene" id=10]
+[ext_resource path="res://stage/Terrain.tscn" type="PackedScene" id=11]
+[ext_resource path="res://textures/RapidParticle.png" type="Texture" id=12]
+[ext_resource path="res://src/Scenery/Rapids1Controller.cs" type="Script" id=13]
+[ext_resource path="res://stage/CanoeDetector.tscn" type="PackedScene" id=14]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 1, 4.44135, 2.72782 )
+
+[sub_resource type="Gradient" id=2]
+offsets = PoolRealArray( 0, 0.0977444, 0.396992, 0.891729 )
+colors = PoolColorArray( 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1 )
+
+[sub_resource type="GradientTexture" id=3]
+gradient = SubResource( 2 )
+
+[sub_resource type="Curve" id=4]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.440184 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=5]
+curve = SubResource( 4 )
+
+[sub_resource type="ParticlesMaterial" id=6]
+emission_shape = 2
+emission_box_extents = Vector3( 0.443, 0.1, 1.88 )
+spread = 13.18
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 1.0
+initial_velocity_random = 0.29
+angular_velocity = 30.0
+angular_velocity_random = 1.0
+linear_accel = 2.76
+linear_accel_random = 1.0
+angle = 360.0
+angle_random = 1.0
+scale = 2.0
+scale_random = 0.41
+scale_curve = SubResource( 5 )
+color_ramp = SubResource( 3 )
+
+[sub_resource type="SpatialMaterial" id=7]
+flags_transparent = true
+flags_unshaded = true
+vertex_color_use_as_albedo = true
+params_blend_mode = 1
+params_billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+albedo_color = Color( 0.786034, 0.820313, 0.815742, 1 )
+albedo_texture = ExtResource( 12 )
+
+[sub_resource type="QuadMesh" id=8]
+material = SubResource( 7 )
+
+[sub_resource type="CylinderShape" id=9]
+radius = 36.3454
+height = 8.47383
 
 [node name="Level" type="Spatial"]
 
@@ -29,28 +89,102 @@ enabled = true
 
 [node name="Scenery" type="Spatial" parent="."]
 
+[node name="Rapids1" type="StaticBody" parent="Scenery"]
+transform = Transform( 5, 0, 0, 0, 1, 0, 0, 0, 5, 39.8978, -0.101585, -40.1167 )
+script = ExtResource( 13 )
+
+[node name="CanoeDetector" parent="Scenery/Rapids1" instance=ExtResource( 14 )]
+
+[node name="Blocker" type="CollisionShape" parent="Scenery/Rapids1"]
+transform = Transform( 0.932185, 0, -0.361983, 0, 1, 0, 0.361983, 0, 0.932185, 0, 0, 0 )
+shape = SubResource( 1 )
+disabled = true
+
+[node name="Particles" type="Particles" parent="Scenery/Rapids1"]
+transform = Transform( 0.972042, 0, -0.234803, 0, 1, 0, 0.234803, 0, 0.972042, 0, 0, 0 )
+amount = 206
+lifetime = 1.5
+randomness = 1.0
+visibility_aabb = AABB( -4, -4.58449, -4.09668, 8, 9.16899, 8 )
+local_coords = false
+draw_order = 2
+process_material = SubResource( 6 )
+draw_pass_1 = SubResource( 8 )
+
+[node name="Terrain" parent="Scenery" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 193, 70, 0 )
+
 [node name="WaterPlane" parent="Scenery" instance=ExtResource( 3 )]
-transform = Transform( 5, 0, 0, 0, 1, 0, 0, 0, 5, 11.8564, 3.8147e-06, -54.4104 )
+transform = Transform( 5, 0, 0, 0, 1, 0, 0, 0, 5, 59.143, 3.8147e-06, -82.0878 )
 
 [node name="WaterPlaneCollision" parent="Scenery" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 177.891, 0, 13.749 )
 
-[node name="clocktower" parent="Scenery" instance=ExtResource( 6 )]
+[node name="Trees" type="Spatial" parent="Scenery"]
+
+[node name="TreeLine9" parent="Scenery/Trees" instance=ExtResource( 10 )]
+transform = Transform( 0.925395, 0, -0.379004, 0, 1, 0, 0.379004, 0, 0.925395, 76.852, -7.62939e-06, 68.952 )
+
+[node name="TreeLine1" parent="Scenery/Trees" instance=ExtResource( 9 )]
+transform = Transform( -0.118993, 0, 0.992895, 0, 1, 0, -0.992895, 0, -0.118993, -28.5521, 0.531609, -2.61206 )
+
+[node name="TreeLine2" parent="Scenery/Trees" instance=ExtResource( 9 )]
+transform = Transform( -0.994454, 0, -0.105171, 0, 1, 0, 0.105171, 0, -0.994454, -3.63089, 0.531609, 64.3996 )
+
+[node name="TreeLine3" parent="Scenery/Trees" instance=ExtResource( 9 )]
+transform = Transform( 0.0444737, 0, 0.999011, 0, 1, 0, -0.999011, 0, 0.0444737, 16.547, 0.531609, 18.1025 )
+
+[node name="TreeLine4" parent="Scenery/Trees" instance=ExtResource( 9 )]
+transform = Transform( 0.00305438, 0, -0.999995, 0, 1, 0, 0.999995, 0, 0.00305438, 41.8475, 0.531609, 16.2236 )
+
+[node name="TreeLine5" parent="Scenery/Trees" instance=ExtResource( 9 )]
+transform = Transform( -0.821468, 0, -0.570255, 0, 1, 0, 0.570255, 0, -0.821468, 12.8242, 0.531609, -57.5259 )
+
+[node name="TreeLine6" parent="Scenery/Trees" instance=ExtResource( 9 )]
+transform = Transform( -0.926246, 0, 0.376919, 0, 1, 0, -0.376919, 0, -0.926246, 55.3373, 0.531609, -53.8413 )
+
+[node name="TreeLine7" parent="Scenery/Trees" instance=ExtResource( 9 )]
+transform = Transform( -0.0211694, 0, 0.999776, 0, 1, 0, -0.999776, 0, -0.0211694, 69.166, 0.531609, -12.593 )
+
+[node name="TreeLine8" parent="Scenery/Trees" instance=ExtResource( 9 )]
+transform = Transform( -0.770903, 0, 0.636953, 0, 1, 0, -0.636953, 0, -0.770903, 61.535, 0.531609, 71.3798 )
+
+[node name="Buildings" type="Spatial" parent="Scenery"]
+
+[node name="clocktower" parent="Scenery/Buildings" instance=ExtResource( 6 )]
 transform = Transform( -8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, 317.126, -3.92298, -15.2605 )
 
-[node name="Condo1" parent="Scenery" instance=ExtResource( 5 )]
+[node name="Condo1" parent="Scenery/Buildings" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 166.459, 0, 0 )
 
 [node name="Sun" type="DirectionalLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.824482, 0.565888, 0, -0.565888, 0.824482, 0.237442, 92.8351, -0.124687 )
-light_energy = 0.4
+light_energy = 0.7
 light_indirect_energy = 0.4
 directional_shadow_max_distance = 1000.0
 
 [node name="ClawInteractions" type="Spatial" parent="."]
 
-[node name="ClawAppear" type="Spatial" parent="ClawInteractions"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 49.1529, 0, -36.7921 )
+[node name="ClawScene1" type="Area" parent="ClawInteractions"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 49.6546, -3.8147e-06, -36.5467 )
+script = ExtResource( 8 )
 
-[node name="ClawSpatial" parent="ClawInteractions/ClawAppear" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0 )
+[node name="ClawSpatial" parent="ClawInteractions/ClawScene1" instance=ExtResource( 7 )]
+transform = Transform( 0.999978, 0.00657984, 0, -0.00657984, 0.999978, -0.000750492, -4.93812e-06, 0.000750475, 1, 5.2065, 1.3, 23.0304 )
+
+[node name="CollisionShape" type="CollisionShape" parent="ClawInteractions/ClawScene1"]
+shape = SubResource( 9 )
+
+[node name="RapidPath1" type="Position3D" parent="ClawInteractions/ClawScene1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -30.3818, 0, -4.2612 )
+
+[node name="RapidPath2" type="Position3D" parent="ClawInteractions/ClawScene1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.15143, 0, 2.00423 )
+
+[node name="RapidPath3" type="Position3D" parent="ClawInteractions/ClawScene1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.60463, 7.62939e-06, 13.983 )
+
+[connection signal="OnCanoeEntered" from="Scenery/Rapids1/CanoeDetector" to="Scenery/Rapids1" method="_on_CanoeDetector_OnCanoeEntered"]
+[connection signal="OnCanoeExited" from="Scenery/Rapids1/CanoeDetector" to="Scenery/Rapids1" method="_on_CanoeDetector_OnCanoeExited"]
+[connection signal="SceneDoneSignal" from="ClawInteractions/ClawScene1" to="Scenery/Rapids1" method="_on_ClawScene1_SceneDoneSignal"]
+[connection signal="body_entered" from="ClawInteractions/ClawScene1" to="ClawInteractions/ClawScene1" method="_on_ClawScene1_body_entered"]
