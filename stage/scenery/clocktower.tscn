@@ -1,16 +1,15 @@
 [gd_scene load_steps=28 format=2]
 
-[ext_resource path="res://Meshes/DebrisModels/Color_M00.material" type="Material" id=1]
+[ext_resource path="res://Meshes/DebrisModels/RubbleClock.material" type="Material" id=1]
 [ext_resource path="res://Meshes/DebrisModels/Wall_Stone_0.material" type="Material" id=2]
 [ext_resource path="res://Meshes/DebrisModels/Wood_Custom.material" type="Material" id=3]
-[ext_resource path="res://Meshes/DebrisModels/Rubble.material" type="Material" id=4]
+[ext_resource path="res://Meshes/DebrisModels/clocktowertextures/Wall_Stone.png" type="Texture" id=4]
 [ext_resource path="res://Meshes/DebrisModels/Color_M07.material" type="Material" id=5]
-[ext_resource path="res://Meshes/DebrisModels/Wall_Stone.material" type="Material" id=6]
 
-[sub_resource type="ConcavePolygonShape" id=23]
+[sub_resource type="ConcavePolygonShape" id=1]
 data = PoolVector3Array( 18.4809, 2.2186, -4.3642, 17.598, -2.0095, -4.5013, 17.598, 2.2186, -4.5013, 18.4809, 2.2186, -4.3642, 18.4809, -2.0095, -4.3642, 17.598, -2.0095, -4.5013, -0.0125, 6.5507, -1.2129, 15.0042, 6.5507, -12.7999, -0.0129, 6.5507, -12.8448, 15.6619, 6.5507, -10.8951, 20.898, 6.5507, -6.6067, 19.4977, 6.5507, -9.8675, -0.0125, 6.5507, -1.2129, 15.6619, 6.5507, -10.8951, 15.0042, 6.5507, -12.7999, 14.5793, 6.5507, -0.2347, 9.9948, 6.5507, -1.2176, 9.9948, 6.5507, -0.2347, 9.9948, 6.5507, -1.2176, 15.6619, 6.5507, -10.8951, -0.0125, 6.5507, -1.2129, 15.6619, 6.5507, -10.8951, 20.5748, 6.5507, -6.0191, 20.898, 6.5507, -6.6067, 15.6619, 6.5507, -10.8951, 17.5784, 6.5507, -5.4904, 20.5748, 6.5507, -6.0191, 14.5793, 6.5507, -0.2347, 15.6619, 6.5507, -10.8951, 9.9948, 6.5507, -1.2176, 17.598, 6.5507, -4.5013, 14.5793, 6.5507, -0.2347, 18.4809, 6.5507, -4.3642, 15.6619, 6.5507, -10.8951, 17.598, 6.5507, -4.5013, 17.5784, 6.5507, -5.4904, 15.6619, 6.5507, -10.8951, 14.5793, 6.5507, -0.2347, 17.598, 6.5507, -4.5013, 17.598, 2.2186, -4.5013, 18.4809, 6.5507, -4.3642, 18.4809, 2.2186, -4.3642, 17.598, 2.2186, -4.5013, 17.598, 6.5507, -4.5013, 18.4809, 6.5507, -4.3642, -0.0129, 2.2186, -12.8448, 15.0042, 6.5507, -12.7999, 15.0042, 2.2186, -12.7999, -0.0129, 2.2186, -12.8448, -0.0129, 6.5507, -12.8448, 15.0042, 6.5507, -12.7999, 18.4809, 2.2186, -4.3642, 14.5793, 6.5507, -0.2347, 14.5793, 2.2186, -0.2347, 18.4809, 2.2186, -4.3642, 18.4809, 6.5507, -4.3642, 14.5793, 6.5507, -0.2347, 15.0042, 2.2186, -12.7999, 15.6619, 6.5507, -10.8951, 15.6619, 2.2186, -10.8951, 15.0042, 2.2186, -12.7999, 15.0042, 6.5507, -12.7999, 15.6619, 6.5507, -10.8951, 14.5793, 2.2186, -0.2347, 9.9948, 6.5507, -0.2347, 9.9948, 2.2186, -0.2347, 14.5793, 2.2186, -0.2347, 14.5793, 6.5507, -0.2347, 9.9948, 6.5507, -0.2347, 15.6619, 2.2186, -10.8951, 19.4977, 6.5507, -9.8675, 19.4977, 2.2186, -9.8675, 15.6619, 2.2186, -10.8951, 15.6619, 6.5507, -10.8951, 19.4977, 6.5507, -9.8675, 9.9948, 2.2186, -0.2347, 9.9948, 6.5507, -1.2176, 9.9948, 2.2186, -1.2176, 9.9948, 2.2186, -0.2347, 9.9948, 6.5507, -0.2347, 9.9948, 6.5507, -1.2176, 19.4977, 2.2186, -9.8675, 20.898, 6.5507, -6.6067, 20.898, 2.2186, -6.6067, 19.4977, 2.2186, -9.8675, 19.4977, 6.5507, -9.8675, 20.898, 6.5507, -6.6067, 20.898, 2.2186, -6.6067, 20.5748, 6.5507, -6.0191, 20.5748, 2.2186, -6.0191, 20.898, 2.2186, -6.6067, 20.898, 6.5507, -6.6067, 20.5748, 6.5507, -6.0191, 9.9948, 2.2186, -1.2176, -0.0125, 6.5507, -1.2129, -0.0125, 2.2186, -1.2129, 9.9948, 2.2186, -1.2176, 9.9948, 6.5507, -1.2176, -0.0125, 6.5507, -1.2129, 20.5748, 2.2186, -6.0191, 17.5784, 6.5507, -5.4904, 17.5784, 2.2186, -5.4904, 20.5748, 2.2186, -6.0191, 20.5748, 6.5507, -6.0191, 17.5784, 6.5507, -5.4904, 17.5784, 2.2186, -5.4904, 17.598, 6.5507, -4.5013, 17.598, 2.2186, -4.5013, 17.5784, 2.2186, -5.4904, 17.5784, 6.5507, -5.4904, 17.598, 6.5507, -4.5013, -0.0125, 2.2186, -1.2129, -0.0129, 6.5507, -12.8448, -0.0129, 2.2186, -12.8448, -0.0125, 2.2186, -1.2129, -0.0125, 6.5507, -1.2129, -0.0129, 6.5507, -12.8448, 15.0042, -2.0095, -12.7999, -0.0125, -2.0095, -1.2129, -0.0129, -2.0095, -12.8448, 9.9948, -2.0095, -1.2176, 14.5793, -2.0095, -0.2347, 9.9948, -2.0095, -0.2347, 15.0042, -2.0095, -12.7999, 9.9948, -2.0095, -1.2176, -0.0125, -2.0095, -1.2129, 20.898, -2.0095, -6.6067, 15.6619, -2.0095, -10.8951, 19.4977, -2.0095, -9.8675, 15.6619, -2.0095, -10.8951, 9.9948, -2.0095, -1.2176, 15.0042, -2.0095, -12.7999, 9.9948, -2.0095, -1.2176, 18.4809, -2.0095, -4.3642, 14.5793, -2.0095, -0.2347, 9.9948, -2.0095, -1.2176, 17.598, -2.0095, -4.5013, 18.4809, -2.0095, -4.3642, 20.5748, -2.0095, -6.0191, 15.6619, -2.0095, -10.8951, 20.898, -2.0095, -6.6067, 9.9948, -2.0095, -1.2176, 17.5784, -2.0095, -5.4904, 17.598, -2.0095, -4.5013, 17.5784, -2.0095, -5.4904, 15.6619, -2.0095, -10.8951, 20.5748, -2.0095, -6.0191, 9.9948, -2.0095, -1.2176, 15.6619, -2.0095, -10.8951, 17.5784, -2.0095, -5.4904, 15.0042, 2.2186, -12.7999, -0.0129, -2.0095, -12.8448, -0.0129, 2.2186, -12.8448, 15.0042, 2.2186, -12.7999, 15.0042, -2.0095, -12.7999, -0.0129, -2.0095, -12.8448, 14.5793, 2.2186, -0.2347, 18.4809, -2.0095, -4.3642, 18.4809, 2.2186, -4.3642, 14.5793, 2.2186, -0.2347, 14.5793, -2.0095, -0.2347, 18.4809, -2.0095, -4.3642, 15.6619, 2.2186, -10.8951, 15.0042, -2.0095, -12.7999, 15.0042, 2.2186, -12.7999, 15.6619, 2.2186, -10.8951, 15.6619, -2.0095, -10.8951, 15.0042, -2.0095, -12.7999, 9.9948, 2.2186, -0.2347, 14.5793, -2.0095, -0.2347, 14.5793, 2.2186, -0.2347, 9.9948, 2.2186, -0.2347, 9.9948, -2.0095, -0.2347, 14.5793, -2.0095, -0.2347, 19.4977, 2.2186, -9.8675, 15.6619, -2.0095, -10.8951, 15.6619, 2.2186, -10.8951, 19.4977, 2.2186, -9.8675, 19.4977, -2.0095, -9.8675, 15.6619, -2.0095, -10.8951, 9.9948, 2.2186, -1.2176, 9.9948, -2.0095, -0.2347, 9.9948, 2.2186, -0.2347, 9.9948, 2.2186, -1.2176, 9.9948, -2.0095, -1.2176, 9.9948, -2.0095, -0.2347, 20.898, 2.2186, -6.6067, 19.4977, -2.0095, -9.8675, 19.4977, 2.2186, -9.8675, 20.898, 2.2186, -6.6067, 20.898, -2.0095, -6.6067, 19.4977, -2.0095, -9.8675, 20.5748, 2.2186, -6.0191, 20.898, -2.0095, -6.6067, 20.898, 2.2186, -6.6067, 20.5748, 2.2186, -6.0191, 20.5748, -2.0095, -6.0191, 20.898, -2.0095, -6.6067, -0.0125, 2.2186, -1.2129, 9.9948, -2.0095, -1.2176, 9.9948, 2.2186, -1.2176, -0.0125, 2.2186, -1.2129, -0.0125, -2.0095, -1.2129, 9.9948, -2.0095, -1.2176, 17.5784, 2.2186, -5.4904, 20.5748, -2.0095, -6.0191, 20.5748, 2.2186, -6.0191, 17.5784, 2.2186, -5.4904, 17.5784, -2.0095, -5.4904, 20.5748, -2.0095, -6.0191, 17.598, 2.2186, -4.5013, 17.5784, -2.0095, -5.4904, 17.5784, 2.2186, -5.4904, 17.598, 2.2186, -4.5013, 17.598, -2.0095, -4.5013, 17.5784, -2.0095, -5.4904, -0.0129, 2.2186, -12.8448, -0.0125, -2.0095, -1.2129, -0.0125, 2.2186, -1.2129, -0.0129, 2.2186, -12.8448, -0.0129, -2.0095, -12.8448, -0.0125, -2.0095, -1.2129 )
 
-[sub_resource type="ArrayMesh" id=1]
+[sub_resource type="ArrayMesh" id=22]
 resource_name = "group_1"
 surfaces/0 = {
 "aabb": AABB( -393.701, -4.82574e-13, -494.961, 613.882, 480, 494.961 ),
@@ -25,7 +24,7 @@ surfaces/0 = {
 "vertex_count": 637
 }
 
-[sub_resource type="ArrayMesh" id=2]
+[sub_resource type="ArrayMesh" id=23]
 resource_name = "group_2"
 surfaces/0 = {
 "aabb": AABB( -0.918729, 0, -32.5832, 20.007, 3.93701, 32.5832 ),
@@ -40,7 +39,7 @@ surfaces/0 = {
 "vertex_count": 448
 }
 
-[sub_resource type="ArrayMesh" id=3]
+[sub_resource type="ArrayMesh" id=24]
 resource_name = "group_3"
 surfaces/0 = {
 "aabb": AABB( -0.918729, 0, -32.5832, 20.007, 3.93701, 32.5832 ),
@@ -55,7 +54,7 @@ surfaces/0 = {
 "vertex_count": 376
 }
 
-[sub_resource type="ArrayMesh" id=4]
+[sub_resource type="ArrayMesh" id=25]
 resource_name = "group_4"
 surfaces/0 = {
 "aabb": AABB( -0.918729, 0, -32.5832, 20.007, 3.93701, 32.5832 ),
@@ -70,7 +69,7 @@ surfaces/0 = {
 "vertex_count": 376
 }
 
-[sub_resource type="ArrayMesh" id=5]
+[sub_resource type="ArrayMesh" id=26]
 resource_name = "group_1001"
 surfaces/0 = {
 "aabb": AABB( 3.93701, 352.441, -129.37, 1.00136e-05, 78.7402, 78.7402 ),
@@ -79,13 +78,20 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97539,
 "index_count": 174,
-"material": ExtResource( 1 ),
+"material": ExtResource( 2 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 75
 }
 
-[sub_resource type="ArrayMesh" id=6]
+[sub_resource type="SpatialMaterial" id=42]
+resource_name = "Wall_Stone"
+vertex_color_use_as_albedo = true
+params_cull_mode = 2
+albedo_texture = ExtResource( 4 )
+roughness = 0.8
+
+[sub_resource type="ArrayMesh" id=27]
 resource_name = "group_1002"
 surfaces/0 = {
 "aabb": AABB( 0, 352.441, -129.37, 3.93702, 78.7402, 78.7402 ),
@@ -94,13 +100,13 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 144,
-"material": ExtResource( 6 ),
+"material": SubResource( 42 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 96
 }
 
-[sub_resource type="ArrayMesh" id=7]
+[sub_resource type="ArrayMesh" id=28]
 resource_name = "group_1003"
 surfaces/0 = {
 "aabb": AABB( 50.6299, 352.441, -3.93701, 78.7402, 78.7402, 1.00136e-05 ),
@@ -109,13 +115,13 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97539,
 "index_count": 174,
-"material": ExtResource( 1 ),
+"material": ExtResource( 2 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 64
 }
 
-[sub_resource type="ArrayMesh" id=8]
+[sub_resource type="ArrayMesh" id=29]
 resource_name = "group_1004"
 surfaces/0 = {
 "aabb": AABB( 50.6299, 352.441, -3.93701, 78.7402, 78.7402, 3.93701 ),
@@ -124,13 +130,13 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 144,
-"material": ExtResource( 6 ),
+"material": SubResource( 42 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 96
 }
 
-[sub_resource type="ArrayMesh" id=9]
+[sub_resource type="ArrayMesh" id=30]
 resource_name = "group_1005"
 surfaces/0 = {
 "aabb": AABB( 50.6299, 352.441, -176.063, 78.7402, 78.7402, 1.52588e-05 ),
@@ -139,13 +145,13 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97539,
 "index_count": 66,
-"material": ExtResource( 1 ),
+"material": ExtResource( 2 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 33
 }
 
-[sub_resource type="ArrayMesh" id=10]
+[sub_resource type="ArrayMesh" id=31]
 resource_name = "group_1006"
 surfaces/0 = {
 "aabb": AABB( 50.6299, 352.441, -180, 78.7402, 78.7402, 3.937 ),
@@ -154,13 +160,13 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 144,
-"material": ExtResource( 6 ),
+"material": SubResource( 42 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 96
 }
 
-[sub_resource type="ArrayMesh" id=11]
+[sub_resource type="ArrayMesh" id=32]
 resource_name = "group_1007"
 surfaces/0 = {
 "aabb": AABB( 72, -5.35308e-16, -1.9685, 36, 80.9516, 1.00136e-05 ),
@@ -175,7 +181,7 @@ surfaces/0 = {
 "vertex_count": 20
 }
 
-[sub_resource type="ArrayMesh" id=12]
+[sub_resource type="ArrayMesh" id=33]
 resource_name = "group_1008"
 surfaces/0 = {
 "aabb": AABB( 30.3676, 243.203, -1.9685, 36, 59.548, 1.9685 ),
@@ -190,7 +196,7 @@ surfaces/0 = {
 "vertex_count": 88
 }
 
-[sub_resource type="ArrayMesh" id=13]
+[sub_resource type="ArrayMesh" id=34]
 resource_name = "group_5"
 surfaces/0 = {
 "aabb": AABB( 0, 0, -180, 125.041, 59.0551, 180 ),
@@ -205,7 +211,7 @@ surfaces/0 = {
 "vertex_count": 78
 }
 
-[sub_resource type="ArrayMesh" id=14]
+[sub_resource type="ArrayMesh" id=35]
 resource_name = "group_6"
 surfaces/0 = {
 "aabb": AABB( 0, 0, -198, 70.8498, 50.7738, 198 ),
@@ -220,7 +226,7 @@ surfaces/0 = {
 "vertex_count": 52
 }
 
-[sub_resource type="ArrayMesh" id=15]
+[sub_resource type="ArrayMesh" id=36]
 resource_name = "group_7"
 surfaces/0 = {
 "aabb": AABB( 2.45125, -3.01552, -348.957, 180.381, 80.9748, 338.724 ),
@@ -229,13 +235,13 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 1662,
-"material": ExtResource( 4 ),
+"material": ExtResource( 1 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 1130
 }
 
-[sub_resource type="ArrayMesh" id=16]
+[sub_resource type="ArrayMesh" id=37]
 resource_name = "group_8"
 surfaces/0 = {
 "aabb": AABB( 2.36265, -2.90652, -349.044, 180.469, 80.9652, 338.886 ),
@@ -244,13 +250,13 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 1662,
-"material": ExtResource( 4 ),
+"material": ExtResource( 1 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 1130
 }
 
-[sub_resource type="ArrayMesh" id=17]
+[sub_resource type="ArrayMesh" id=38]
 resource_name = "group_10"
 surfaces/0 = {
 "aabb": AABB( 1.7053e-13, 0, -148.937, 191.57, 59.5856, 148.937 ),
@@ -265,7 +271,7 @@ surfaces/0 = {
 "vertex_count": 57
 }
 
-[sub_resource type="ArrayMesh" id=18]
+[sub_resource type="ArrayMesh" id=39]
 resource_name = "group_10001"
 surfaces/0 = {
 "aabb": AABB( 117.016, -61.8664, -146.614, 256.69, 78.5266, 113.138 ),
@@ -280,7 +286,7 @@ surfaces/0 = {
 "vertex_count": 48
 }
 
-[sub_resource type="ArrayMesh" id=19]
+[sub_resource type="ArrayMesh" id=40]
 resource_name = "group_11"
 surfaces/0 = {
 "aabb": AABB( 4.54747e-13, 1.7053e-13, -492.038, 393.618, 98.4252, 492.038 ),
@@ -295,7 +301,7 @@ surfaces/0 = {
 "vertex_count": 126
 }
 
-[sub_resource type="ArrayMesh" id=20]
+[sub_resource type="ArrayMesh" id=41]
 resource_name = "group_12"
 surfaces/0 = {
 "aabb": AABB( 0, 0, -492.038, 565.913, 98.4252, 492.038 ),
@@ -315,7 +321,7 @@ surfaces/0 = {
 [node name="StaticBody" type="StaticBody" parent="."]
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
-shape = SubResource( 23 )
+shape = SubResource( 1 )
 
 [node name="SketchUp" type="Spatial" parent="."]
 transform = Transform( 0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, 0, 0, 0 )
@@ -325,82 +331,82 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 384.701, 0, 0 )
 
 [node name="group_1" type="MeshInstance" parent="SketchUp/group_0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -9 )
-mesh = SubResource( 1 )
+mesh = SubResource( 22 )
 material/0 = null
 
 [node name="group_2" type="MeshInstance" parent="SketchUp/group_0/group_1"]
-transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 88.0315, 389.843, -3.93701 )
-mesh = SubResource( 2 )
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 88.0315, 389.842, -3.93701 )
+mesh = SubResource( 23 )
 material/0 = null
 
 [node name="group_3" type="MeshInstance" parent="SketchUp/group_0/group_1"]
 transform = Transform( -1, -4.37114e-08, -4.37114e-08, 4.37114e-08, -1.19209e-07, -1, 4.37114e-08, -1, 1.78814e-07, 91.9685, 389.842, -176.063 )
-mesh = SubResource( 3 )
+mesh = SubResource( 24 )
 material/0 = null
 
 [node name="group_4" type="MeshInstance" parent="SketchUp/group_0/group_1"]
 transform = Transform( 0, -1, 2.98023e-08, -2.98023e-08, 0, -1, 1, -2.98023e-08, 0, 3.93701, 389.842, -91.9685 )
-mesh = SubResource( 4 )
+mesh = SubResource( 25 )
 material/0 = null
 
 [node name="group_1001" type="MeshInstance" parent="SketchUp/group_0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -9 )
-mesh = SubResource( 5 )
+mesh = SubResource( 26 )
 material/0 = null
 
 [node name="group_1002" type="MeshInstance" parent="SketchUp/group_0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -9 )
-mesh = SubResource( 6 )
+mesh = SubResource( 27 )
 material/0 = null
 
 [node name="group_1003" type="MeshInstance" parent="SketchUp/group_0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -9 )
-mesh = SubResource( 7 )
+mesh = SubResource( 28 )
 material/0 = null
 
 [node name="group_1004" type="MeshInstance" parent="SketchUp/group_0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -9 )
-mesh = SubResource( 8 )
+mesh = SubResource( 29 )
 material/0 = null
 
 [node name="group_1005" type="MeshInstance" parent="SketchUp/group_0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -9 )
-mesh = SubResource( 9 )
+mesh = SubResource( 30 )
 material/0 = null
 
 [node name="group_1006" type="MeshInstance" parent="SketchUp/group_0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -9 )
-mesh = SubResource( 10 )
+mesh = SubResource( 31 )
 material/0 = null
 
 [node name="group_1007" type="MeshInstance" parent="SketchUp/group_0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -9 )
-mesh = SubResource( 11 )
+mesh = SubResource( 32 )
 material/0 = null
 
 [node name="group_1008" type="MeshInstance" parent="SketchUp/group_0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -9 )
-mesh = SubResource( 12 )
+mesh = SubResource( 33 )
 material/0 = null
 
 [node name="group_5" type="MeshInstance" parent="SketchUp/group_0"]
 transform = Transform( 1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 0, 480, 0 )
-mesh = SubResource( 13 )
+mesh = SubResource( 34 )
 material/0 = null
 
 [node name="group_6" type="MeshInstance" parent="SketchUp/group_0/group_5"]
 transform = Transform( 0.642824, 0.642824, 0, -0.642824, 0.642824, 0, 0, 0, 0.909091, 115.591, 0, -4.09091 )
-mesh = SubResource( 14 )
+mesh = SubResource( 35 )
 material/0 = null
 
 [node name="group_7" type="MeshInstance" parent="SketchUp"]
 transform = Transform( -1.02299, 0, 7.5577e-08, 0, 2.44296, 0, -8.94326e-08, 0, -0.8645, 727.954, 0, -315.426 )
-mesh = SubResource( 15 )
+mesh = SubResource( 36 )
 material/0 = null
 
 [node name="group_8" type="MeshInstance" parent="SketchUp"]
 transform = Transform( -0.902911, 0, 8.16231e-08, 0, 2.13073, 0, -7.8935e-08, 0, -0.93366, 714.078, 0, -509.14 )
-mesh = SubResource( 16 )
+mesh = SubResource( 37 )
 material/0 = null
 
 [node name="group_9" type="Spatial" parent="SketchUp"]
@@ -408,22 +414,22 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1.08, -12.9921, 188.976, -30.1465
 
 [node name="group_10" type="MeshInstance" parent="SketchUp/group_9"]
 transform = Transform( 0.866025, 0.5, 0, -0.5, 0.866025, 0, 0, 0, 0.925926, 558.875, -1.31871, 0 )
-mesh = SubResource( 17 )
+mesh = SubResource( 38 )
 material/0 = null
 
 [node name="group_10001" type="MeshInstance" parent="SketchUp/group_9"]
 transform = Transform( 0.866025, 0.5, 0, -0.5, 0.866025, 0, 0, 0, 0.925926, 558.875, -1.31871, 0 )
-mesh = SubResource( 18 )
+mesh = SubResource( 39 )
 material/0 = null
 
 [node name="group_11" type="MeshInstance" parent="SketchUp/group_9"]
 transform = Transform( 0.728635, 0.165666, 0.124947, -0.193926, 0.711992, 0.156376, -0.0893552, -0.194322, 0.679481, 638.288, -62.1646, -91.4625 )
-mesh = SubResource( 19 )
+mesh = SubResource( 40 )
 material/0 = null
 
 [node name="group_12" type="MeshInstance" parent="SketchUp/group_9"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.925926, 0, 0, 0 )
-mesh = SubResource( 20 )
+mesh = SubResource( 41 )
 material/0 = null
 
 [node name="group_12001" type="Spatial" parent="SketchUp/group_9"]

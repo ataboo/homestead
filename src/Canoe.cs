@@ -16,11 +16,17 @@ public class Canoe : RigidBody
 
 	private Position3D _autopilotTarget;
 
+	private AnimationPlayer _animation;
+
+	private CrateControl _berryCrate;
+
+	private Position3D _cargoPos;
+
 	private float axisSpeed = 2f;
 
 	public bool IsUnderPlayerControl => _autopilotTarget == null;
 
-	public bool SpinWildlyUnderAutopilot = true;
+	private bool _boatSpinning;
 
 	// Declare member variables here. Examples:
 	// private int a = 2;
@@ -29,6 +35,11 @@ public class Canoe : RigidBody
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		_animation = GetNode<AnimationPlayer>("AnimationPlayer");
+		_berryCrate = GetNode<CrateControl>("/root/Level/Scenery/Props/BerryCrate");
+		_cargoPos = GetNode<Position3D>("CargoPos");
+
+		_berryCrate.SetTargetPos(_cargoPos, true);
 	}
 
 	private void TakePlayerInput(float delta) {
@@ -53,10 +64,18 @@ public class Canoe : RigidBody
 		}
 
 		if(input.y == 0f) {
-			input.y = _inputAxes.y > 0f ? -1f : _inputAxes.y < 0f ? 1f : 0f;
+			if(Mathf.Abs(_inputAxes.y) < dAxis) {
+				_inputAxes.y = 0f;
+			} else {
+				input.y = _inputAxes.y > 0f ? -1f : _inputAxes.y < 0f ? 1f : 0f;
+			}
 		}
 		if(input.x == 0f) {
-			input.x = _inputAxes.x > 0f ? -1f : _inputAxes.x < 0f ? 1f : 0f;
+			if(Mathf.Abs(_inputAxes.x) < dAxis) {
+				_inputAxes.x = 0f;
+			} else {
+				input.x = _inputAxes.x > 0f ? -1f : _inputAxes.x < 0f ? 1f : 0f;
+			}
 		}
 
 		_inputAxes.x = Mathf.Clamp(_inputAxes.x + input.x * dAxis, -1f, 1f);
@@ -65,6 +84,27 @@ public class Canoe : RigidBody
 
 	public override void _Process(float delta) {
 		TakePlayerInput(delta);
+
+		UpdatePaddleAnimation(delta);
+	}
+
+	private void UpdatePaddleAnimation(float delta) {
+		bool moving = false;
+		if(_inputAxes.y > 0.1f || Mathf.Abs(_inputAxes.x) > 0) {
+			_animation.Play("PaddleForward");
+			moving = true;
+		} else if (_inputAxes.y < -0.1f) {
+			_animation.Play("PaddleBackward");
+			moving = true;
+		} else {
+			_animation.Play("PaddleIdle");
+		}
+
+		if(moving) {
+			_animation.PlaybackSpeed = Mathf.Lerp(1, 5f, LinearVelocity.Length() / speedLimit);
+		} else {
+			_animation.PlaybackSpeed = 1f;
+		}
 	}
 
 	public override void _IntegrateForces(PhysicsDirectBodyState state) {
@@ -82,20 +122,33 @@ public class Canoe : RigidBody
 		}
 		
 		if(_inputAxes.x != 0) {
-			state.ApplyTorqueImpulse(Transform.basis.y * -rotationSpeed * _inputAxes.x * playerForceScalar);
+			var xInput = _inputAxes.y < 0f ? -_inputAxes.x : _inputAxes.x;
+			state.ApplyTorqueImpulse(Transform.basis.y * -rotationSpeed * xInput * playerForceScalar);
 		}
 
 		if(!IsUnderPlayerControl) {
-			if(SpinWildlyUnderAutopilot) {
+			if(_boatSpinning) {
 				state.ApplyTorqueImpulse(Transform.basis.y * -rotationSpeed);
+			} else {
+				var globalTran = GlobalTransform;
+				var basisOffset = Mathf.Clamp(globalTran.basis.z.SignedAngleTo(_autopilotTarget.GlobalTransform.basis.z, Vector3.Up) * 10f, -rotationSpeed, rotationSpeed);
+				
+				if(Mathf.Abs(basisOffset) > 0.01f) {
+					state.ApplyTorqueImpulse(Transform.basis.y * basisOffset);
+				}
 			}
 
 			var targetDir = _autopilotTarget.GlobalTransform.LookingAt(GlobalTransform.origin, Vector3.Up);
-			state.LinearVelocity = state.LinearVelocity.LinearInterpolate(targetDir.basis.z * 5f, 5/60f);
+			var velocity = state.LinearVelocity.LinearInterpolate(targetDir.basis.z * 5f, 5/60f);
+			velocity.y = 0;
+			if(velocity.Length() > 0.01f) {
+				state.LinearVelocity = velocity;
+			}
 		}
 	}
 
-	public void SetAutopilotTarget(Position3D position) {
+	public void SetAutopilotTarget(Position3D position, bool boatSpinning) {
 		_autopilotTarget = position;
+		_boatSpinning = position != null && boatSpinning;
 	}
 }

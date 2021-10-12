@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/paddle2.wav-ff7c1a79005502f33c3796140e4f5d50.sample"
+
+[deps]
+
+source_file="res://Audio/Effects/paddle2.wav"
+dest_files=[ "res://.import/paddle2.wav-ff7c1a79005502f33c3796140e4f5d50.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/LoopA.mp3-c0a4921020c8dd84fe9ab8fb5e49d664.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/Raw/LoopA.mp3"
+dest_files=[ "res://.import/LoopA.mp3-c0a4921020c8dd84fe9ab8fb5e49d664.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

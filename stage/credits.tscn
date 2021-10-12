@@ -1,0 +1,202 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://textures/LiberationSans-Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://textures/LiberationSans-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://src/CreditsController.cs" type="Script" id=3]
+[ext_resource path="res://Audio/Music/HomesteadLoops-GuitarPluck.wav" type="AudioStream" id=4]
+[ext_resource path="res://Audio/Music/HomesteadLoops-Piano.wav" type="AudioStream" id=5]
+[ext_resource path="res://Audio/Music/HomesteadLoops-Trashlid.wav" type="AudioStream" id=6]
+[ext_resource path="res://Audio/Music/HomesteadLoops-Drums.wav" type="AudioStream" id=7]
+[ext_resource path="res://Audio/Music/HomesteadLoops-GuitarStrum.wav" type="AudioStream" id=8]
+[ext_resource path="res://Audio/Music/HomesteadLoops-Strings.wav" type="AudioStream" id=9]
+[ext_resource path="res://src/MusicPlayerControl.cs" type="Script" id=10]
+[ext_resource path="res://stage/Quit.tscn" type="PackedScene" id=11]
+[ext_resource path="res://textures/Wildcard2.png" type="Texture" id=12]
+
+[sub_resource type="DynamicFont" id=3]
+size = 60
+font_data = ExtResource( 1 )
+
+[sub_resource type="Theme" id=2]
+default_font = SubResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 28
+font_data = ExtResource( 2 )
+
+[sub_resource type="Theme" id=5]
+default_font = SubResource( 4 )
+
+[node name="CreditsScene" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_top = 0.564209
+margin_right = 1920.0
+margin_bottom = 1080.0
+color = Color( 0.117647, 0.113725, 0.113725, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Music" type="Node" parent="."]
+script = ExtResource( 10 )
+
+[node name="MDrums" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource( 7 )
+volume_db = -80.0
+autoplay = true
+bus = "M-Drums"
+
+[node name="MPiano" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource( 5 )
+volume_db = -80.0
+autoplay = true
+bus = "M-Drums"
+
+[node name="MStrings" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource( 9 )
+volume_db = -80.0
+autoplay = true
+bus = "M-Drums"
+
+[node name="MGuitarPluck" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource( 4 )
+volume_db = -80.0
+autoplay = true
+bus = "M-Drums"
+
+[node name="MGuitarStrum" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource( 8 )
+volume_db = -80.0
+autoplay = true
+bus = "M-Drums"
+
+[node name="MTrashlid" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource( 6 )
+volume_db = -80.0
+autoplay = true
+bus = "M-Drums"
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 1080.0
+margin_right = 1920.0
+margin_bottom = 2160.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 1910.0
+margin_bottom = 1070.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 93
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+margin_right = 1900.0
+margin_bottom = 228.0
+custom_constants/margin_top = 160
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer"]
+margin_top = 160.0
+margin_right = 1900.0
+margin_bottom = 228.0
+size_flags_vertical = 1
+theme = SubResource( 2 )
+text = "Homestead"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+margin_top = 321.0
+margin_right = 1900.0
+margin_bottom = 458.0
+size_flags_horizontal = 3
+custom_constants/separation = 24
+
+[node name="Labels" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+margin_right = 938.0
+margin_bottom = 137.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource( 5 )
+text = "Programming, Sound
+Production, Modelling
+Protaganist
+Homestead"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Values" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+margin_left = 962.0
+margin_right = 1900.0
+margin_bottom = 137.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource( 5 )
+text = "Alex Raboud
+Heather Camp
+Jesse Harlton
+Craig Ostrin"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Created For" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_top = 551.0
+margin_right = 1900.0
+margin_bottom = 583.0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme = SubResource( 5 )
+text = "Created with Godot for WildJam #38."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="MarginContainer/VBoxContainer"]
+position = Vector2( 962, 699.209 )
+scale = Vector2( 0.168971, 0.168971 )
+texture = ExtResource( 12 )
+
+[node name="Caveats" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_top = 676.0
+margin_right = 1900.0
+margin_bottom = 848.0
+size_flags_vertical = 1
+theme = SubResource( 5 )
+text = "
+
+
+
+(Assuming subtitles and credits don't count)"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Listener" type="Listener" parent="."]
+
+[node name="Quit" parent="." instance=ExtResource( 11 )]
+flat = true

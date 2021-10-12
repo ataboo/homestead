@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/RiverLoop.ogg-6cb4663bd3b853c01fe552087fd1ad98.oggstr"
+
+[deps]
+
+source_file="res://Audio/Effects/RiverLoop.ogg"
+dest_files=[ "res://.import/RiverLoop.ogg-6cb4663bd3b853c01fe552087fd1ad98.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

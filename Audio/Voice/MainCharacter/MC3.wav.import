@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/MC3.wav-a779e0ae6cf2c8b6d9a95758bad3b73a.sample"
+
+[deps]
+
+source_file="res://Audio/Voice/MainCharacter/MC3.wav"
+dest_files=[ "res://.import/MC3.wav-a779e0ae6cf2c8b6d9a95758bad3b73a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

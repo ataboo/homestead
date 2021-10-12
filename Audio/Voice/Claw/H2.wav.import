@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/H2.wav-41f83c70d829d75984e369afa9d17cb5.sample"
+
+[deps]
+
+source_file="res://Audio/Voice/Claw/H2.wav"
+dest_files=[ "res://.import/H2.wav-41f83c70d829d75984e369afa9d17cb5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

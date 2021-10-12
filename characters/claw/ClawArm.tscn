@@ -1,10 +1,15 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=27 format=2]
 
-[ext_resource path="res://Meshes/Characters/Claw/HeadHighlight.material" type="Material" id=1]
+[ext_resource path="res://Meshes/Scenery/boatHighlight.material" type="Material" id=1]
 [ext_resource path="res://Meshes/Characters/Claw/ClawClampMetal.material" type="Material" id=2]
 [ext_resource path="res://Meshes/Characters/Claw/Material_001.material" type="Material" id=3]
 [ext_resource path="res://Meshes/Characters/Claw/ClawClamp.material" type="Material" id=4]
 [ext_resource path="res://src/ClawArmController.cs" type="Script" id=5]
+[ext_resource path="res://src/Utility/RandomizedAudioSource.cs" type="Script" id=6]
+[ext_resource path="res://Audio/Effects/paddle2.wav" type="AudioStream" id=7]
+[ext_resource path="res://Audio/Effects/paddle1.wav" type="AudioStream" id=8]
+[ext_resource path="res://Audio/Effects/paddle3.wav" type="AudioStream" id=9]
+[ext_resource path="res://Audio/Effects/paddle4.wav" type="AudioStream" id=10]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "TopClaw"
@@ -975,8 +980,6 @@ tracks/13/imported = true
 tracks/13/enabled = false
 tracks/13/keys = PoolRealArray( 0, 1, -2.83208e-16, 0.0360967, -1.27545, -0.63203, -1.4014e-16, -1.98918e-19, 0.774944, 1, 1, 1, 0.0666667, 1, -2.83208e-16, 0.0360546, -1.27397, -0.63146, -1.40176e-16, -1.98952e-19, 0.775409, 1, 1, 1, 0.133333, 1, -2.83208e-16, 0.0357549, -1.26338, -0.627372, -1.40436e-16, -1.99317e-19, 0.77872, 1, 1, 1, 0.2, 1, -2.83208e-16, 0.0351261, -1.24116, -0.618687, -1.40972e-16, -2.00072e-19, 0.785638, 1, 1, 1, 0.266667, 1, -2.83208e-16, 0.0342, -1.20843, -0.605635, -1.41737e-16, -2.01174e-19, 0.795743, 1, 1, 1, 0.4, 1, -2.83208e-16, 0.0315953, -1.11641, -0.567312, -1.43715e-16, -2.03959e-19, 0.823503, 1, 1, 1, 0.733333, 1, -2.83208e-16, 0.0220423, -0.778848, -0.408405, -1.483e-16, -2.10481e-19, 0.912801, 1, 1, 1, 1, 1, -2.83208e-16, 0.0132414, -0.467875, -0.245008, -1.48095e-16, -2.10184e-19, 0.969521, 1, 1, 1, 1.33333, 1, -2.83208e-16, 0.00393355, -0.138986, -0.0704287, -1.43306e-16, -2.0339e-19, 0.997517, 1, 1, 1, 1.46667, 1, -2.83208e-16, 0.00151455, -0.0535133, -0.0267661, -1.41425e-16, -2.00724e-19, 0.999642, 1, 1, 1, 1.53333, 1, -2.83208e-16, 0.000698566, -0.024684, -0.0122879, -1.40742e-16, -1.99756e-19, 0.999925, 1, 1, 1, 1.6, 1, -2.83208e-16, 0.000193119, -0.00682044, -0.00338493, -1.40308e-16, -1.99142e-19, 0.999994, 1, 1, 1, 1.66667, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
-[sub_resource type="SphereMesh" id=17]
-
 [node name="ClawSpatial" type="Spatial"]
 script = ExtResource( 5 )
 aboveWaterHeight = 0.8
@@ -1059,7 +1062,7 @@ bones/13/enabled = true
 bones/13/bound_children = [  ]
 
 [node name="BoneAttachment" type="BoneAttachment" parent="ClawModel/Armature/Skeleton"]
-transform = Transform( 0.999998, -4.08979e-06, -0.00176764, 0.000284189, 0.987361, 0.158488, 0.00174465, -0.158489, 0.987359, -1.44999e-08, 3.21513, -1.18781 )
+transform = Transform( 0.999998, 0.00174417, 0.000287149, 0.000284189, -0.318971, 0.947765, 0.00174465, -0.947763, -0.31897, -1.44999e-08, 3.21513, -1.18781 )
 bone_name = "TopClaw"
 
 [node name="TopClaw" type="MeshInstance" parent="ClawModel/Armature/Skeleton/BoneAttachment"]
@@ -1068,7 +1071,7 @@ mesh = SubResource( 1 )
 material/0 = null
 
 [node name="BoneAttachment2" type="BoneAttachment" parent="ClawModel/Armature/Skeleton"]
-transform = Transform( -0.999999, -4.07264e-06, -0.00176765, 0.000290091, -0.986818, -0.161838, -0.00174368, -0.161838, 0.986815, -1.57328e-08, 2.80093, -1.18851 )
+transform = Transform( -0.999999, 0.00174417, 0.000287166, 0.000290091, 0.322185, -0.946677, -0.00174368, -0.946674, -0.322184, -1.57328e-08, 2.80093, -1.18851 )
 bone_name = "BottomClaw"
 
 [node name="BottomClaw" type="MeshInstance" parent="ClawModel/Armature/Skeleton/BoneAttachment2"]
@@ -1077,7 +1080,7 @@ mesh = SubResource( 2 )
 material/0 = null
 
 [node name="BoneAttachment3" type="BoneAttachment" parent="ClawModel/Armature/Skeleton"]
-transform = Transform( 0.000287175, 0.98709, 0.160163, -1, 0.000275893, 9.27789e-05, 4.75028e-05, -0.160163, 0.987089, 0.207097, 3.00803, -1.18816 )
+transform = Transform( 0.000287056, -0.320578, 0.947222, -1, -0.000136921, 0.000256728, 4.75029e-05, -0.947221, -0.320577, 0.207097, 3.00803, -1.18816 )
 bone_name = "RightClaw"
 
 [node name="RightClaw" type="MeshInstance" parent="ClawModel/Armature/Skeleton/BoneAttachment3"]
@@ -1086,7 +1089,7 @@ mesh = SubResource( 3 )
 material/0 = null
 
 [node name="BoneAttachment4" type="BoneAttachment" parent="ClawModel/Armature/Skeleton"]
-transform = Transform( -0.000287175, -0.98709, -0.160163, 0.999994, 0.00026765, -0.00344246, 0.00344075, -0.160163, 0.987083, -0.207097, 3.00803, -1.18816 )
+transform = Transform( -0.000287294, 0.320578, -0.947222, 0.999994, 0.00335139, 0.000830959, 0.00344077, -0.947215, -0.320576, -0.207097, 3.00803, -1.18816 )
 bone_name = "LeftClaw"
 
 [node name="LeftClaw" type="MeshInstance" parent="ClawModel/Armature/Skeleton/BoneAttachment4"]
@@ -1116,7 +1119,9 @@ anims/CubeAction = SubResource( 14 )
 anims/Grab = SubResource( 15 )
 anims/Grab001 = SubResource( 16 )
 
-[node name="TargetDebug" type="MeshInstance" parent="."]
-transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0 )
-mesh = SubResource( 17 )
-material/0 = null
+[node name="ClawSplash" type="AudioStreamPlayer3D" parent="."]
+unit_size = 3.6
+max_distance = 60.0
+bus = "ClawSplash"
+script = ExtResource( 6 )
+clips = [ ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 10 ) ]

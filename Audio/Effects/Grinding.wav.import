@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Grinding.wav-89f9fa33133ff8bd3480234dd95de779.sample"
+
+[deps]
+
+source_file="res://Audio/Effects/Grinding.wav"
+dest_files=[ "res://.import/Grinding.wav-89f9fa33133ff8bd3480234dd95de779.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

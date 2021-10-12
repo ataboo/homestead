@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/H5_edited.wav-d0fd950308b98d023995f9a68e077e4c.sample"
+
+[deps]
+
+source_file="res://Audio/Voice/Claw/H5_edited.wav"
+dest_files=[ "res://.import/H5_edited.wav-d0fd950308b98d023995f9a68e077e4c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

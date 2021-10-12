@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/MC4 Updated.wav-383052f2ff04f447a5b085648018b8af.sample"
+
+[deps]
+
+source_file="res://Audio/Voice/MainCharacter/MC4 Updated.wav"
+dest_files=[ "res://.import/MC4 Updated.wav-383052f2ff04f447a5b085648018b8af.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

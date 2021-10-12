@@ -36,8 +36,6 @@ public class ClawArmController : Spatial
 
 	public float movementSpeed = 1f;
 
-	private MeshInstance _targetDebug;
-
 	// Declare member variables here. Examples:
 	// private int a = 2;
 	// private string b = "text";
@@ -47,7 +45,6 @@ public class ClawArmController : Spatial
 	{
 		_bendPlayer = GetNode<AnimationPlayer>("ClawModel/BendPlayer");
 		_clawPlayer = GetNode<AnimationPlayer>("ClawModel/ClawPlayer");
-		_targetDebug = GetNode<MeshInstance>("TargetDebug");
 
 		SetClawOpen(false);
 		SetBentDown(false);
@@ -61,7 +58,7 @@ public class ClawArmController : Spatial
 		_initialModelTranslation = _clawModel.Translation;
 	}
 
-	public override void _Process(float delta) {
+    public override void _Process(float delta) {
 		if(_bobbing) {
 			_t += delta;
 			var theta = _t * Mathf.Pi * 2 / bobPeriod;
@@ -101,10 +98,6 @@ public class ClawArmController : Spatial
 		
 		_targetPos = position;
 		_targetLookPos = lookTarget;
-
-		var debugTran = _targetDebug.GlobalTransform;
-		debugTran.origin = position;
-		_targetDebug.GlobalTransform = debugTran;
 	}
 
 	public void SetClawOpen(bool open) {

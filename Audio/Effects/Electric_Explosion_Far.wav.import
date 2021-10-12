@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Electric_Explosion_Far.wav-650f32b12f470ffe121ec7f88df8e9fa.sample"
+
+[deps]
+
+source_file="res://Audio/Effects/Electric_Explosion_Far.wav"
+dest_files=[ "res://.import/Electric_Explosion_Far.wav-650f32b12f470ffe121ec7f88df8e9fa.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
