@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Goal Posts.obj-61b75f484cd3f1ec487ad6e449b41611.mesh"
+
+[deps]
+
+files=[ "res://.import/Goal Posts.obj-61b75f484cd3f1ec487ad6e449b41611.mesh" ]
+
+source_file="res://Meshes/HeatherModels/Goal Posts/Goal Posts.obj"
+dest_files=[ "res://.import/Goal Posts.obj-61b75f484cd3f1ec487ad6e449b41611.mesh", "res://.import/Goal Posts.obj-61b75f484cd3f1ec487ad6e449b41611.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
