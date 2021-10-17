@@ -44,7 +44,7 @@ surfaces/1 = {
 "vertex_count": 112
 }
 
-[sub_resource type="ArrayMesh" id=2]
+[sub_resource type="ArrayMesh" id=18]
 resource_name = "FoodCrate002"
 surfaces/0 = {
 "aabb": AABB( -1.20012, -1.20012, -1.20011, 2.40023, 2.40023, 2.40023 ),
@@ -512,7 +512,7 @@ material/1 = null
 
 [node name="FoodCrate002" type="MeshInstance" parent="Base/Crates"]
 transform = Transform( 0.253924, 0, 0, 0, 0.253924, 0, 0, 0, 0.253924, 2.53708, 0.805619, 0.940062 )
-mesh = SubResource( 2 )
+mesh = SubResource( 18 )
 material/0 = null
 material/1 = null
 
@@ -630,7 +630,7 @@ bones/13/enabled = true
 bones/13/bound_children = [  ]
 
 [node name="BoneAttachment" type="BoneAttachment" parent="ClawArm1/Skeleton"]
-transform = Transform( 0.999999, 0.00174411, 0.000287129, 0.000284188, -0.31897, 0.947765, 0.00174459, -0.947763, -0.318971, 9.14131e-11, 1.20792, -1.18782 )
+transform = Transform( 0.999999, 0.00174411, 0.000287129, 0.000284186, -0.318969, 0.947765, 0.00174458, -0.947763, -0.31897, 9.13848e-11, 1.20793, -1.18782 )
 bone_name = "TopClaw"
 
 [node name="TopClaw001" type="MeshInstance" parent="ClawArm1/Skeleton/BoneAttachment"]
@@ -639,7 +639,7 @@ mesh = SubResource( 10 )
 material/0 = null
 
 [node name="BoneAttachment2" type="BoneAttachment" parent="ClawArm1/Skeleton"]
-transform = Transform( -0.999999, 0.00174411, 0.000287146, 0.000290092, 0.322185, -0.946677, -0.00174362, -0.946675, -0.322184, -4.76785e-07, 0.793732, -1.18852 )
+transform = Transform( -0.999999, 0.00174411, 0.000287146, 0.000290094, 0.322186, -0.946676, -0.00174362, -0.946675, -0.322185, -4.76785e-07, 0.793733, -1.18852 )
 bone_name = "BottomClaw"
 
 [node name="BottomClaw001" type="MeshInstance" parent="ClawArm1/Skeleton/BoneAttachment2"]
@@ -648,7 +648,7 @@ mesh = SubResource( 11 )
 material/0 = null
 
 [node name="BoneAttachment3" type="BoneAttachment" parent="ClawArm1/Skeleton"]
-transform = Transform( 0.000286996, -0.320578, 0.947223, -1, -0.000136626, 0.000256759, 4.77886e-05, -0.947222, -0.320578, 0.207096, 1.00083, -1.18817 )
+transform = Transform( 0.000286996, -0.320578, 0.947222, -1, -0.000135522, 0.000257132, 4.68025e-05, -0.947221, -0.320578, 0.207096, 1.00083, -1.18817 )
 bone_name = "RightClaw"
 
 [node name="RightClaw001" type="MeshInstance" parent="ClawArm1/Skeleton/BoneAttachment3"]
@@ -657,7 +657,7 @@ mesh = SubResource( 12 )
 material/0 = null
 
 [node name="BoneAttachment4" type="BoneAttachment" parent="ClawArm1/Skeleton"]
-transform = Transform( -0.000287294, 0.320578, -0.947222, 0.999994, 0.00335164, 0.000831051, 0.00344049, -0.947216, -0.320577, -0.207097, 1.00083, -1.18817 )
+transform = Transform( -0.000287294, 0.320578, -0.947222, 0.999994, 0.00335275, 0.000831421, 0.00344148, -0.947216, -0.320577, -0.207097, 1.00083, -1.18817 )
 bone_name = "LeftClaw"
 
 [node name="RightClaw002" type="MeshInstance" parent="ClawArm1/Skeleton/BoneAttachment4"]
@@ -666,7 +666,7 @@ mesh = SubResource( 13 )
 material/0 = null
 
 [node name="BoneAttachment5" type="BoneAttachment" parent="ClawArm1/Skeleton"]
-transform = Transform( 1, -6.34433e-08, -1.0601e-10, 1.60494e-11, -0.00141795, 0.999999, -6.34434e-08, -0.999999, -0.00141864, 3.0459e-11, 1.00061, -1.00433 )
+transform = Transform( 1, -6.34433e-08, -1.0601e-10, 1.61053e-11, -0.00141679, 0.999999, -6.34434e-08, -0.999999, -0.00141765, 3.04591e-11, 1.00061, -1.00433 )
 bone_name = "Bone.007"
 
 [node name="ArmGrabPoint" type="Position3D" parent="ClawArm1/Skeleton/BoneAttachment5"]

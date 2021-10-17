@@ -1678,7 +1678,7 @@ bind/13/name = "IK_ClawOpen"
 bind/13/bone = -1
 bind/13/pose = Transform( -0.97806, -3.20142e-10, -0.208324, -0.000295452, 0.999999, 0.00138712, 0.208324, 0.00141823, -0.978059, 6.74602, -2.22754, 39.7236 )
 
-[sub_resource type="ArrayMesh" id=1]
+[sub_resource type="ArrayMesh" id=156]
 resource_name = "group_2"
 surfaces/0 = {
 "aabb": AABB( 0, 0, -23.573, 9.05512, 23.573, 23.573 ),
@@ -1693,7 +1693,7 @@ surfaces/0 = {
 "vertex_count": 241
 }
 
-[sub_resource type="ArrayMesh" id=2]
+[sub_resource type="ArrayMesh" id=157]
 resource_name = "group_2001"
 surfaces/0 = {
 "aabb": AABB( 8.66142, 5.48731, -18.0857, 9.53674e-06, 12.5984, 12.5984 ),
@@ -1708,7 +1708,7 @@ surfaces/0 = {
 "vertex_count": 48
 }
 
-[sub_resource type="ArrayMesh" id=3]
+[sub_resource type="ArrayMesh" id=158]
 resource_name = "group_2002"
 surfaces/0 = {
 "aabb": AABB( 0, 5.48731, -18.0857, 9.05513, 12.5984, 12.5984 ),
@@ -1723,7 +1723,7 @@ surfaces/0 = {
 "vertex_count": 72
 }
 
-[sub_resource type="ArrayMesh" id=4]
+[sub_resource type="ArrayMesh" id=159]
 resource_name = "group_3001"
 surfaces/0 = {
 "aabb": AABB( -2.27374e-13, 4.71157, -98.5089, 68.8976, 49.2884, 98.5089 ),
@@ -1738,7 +1738,7 @@ surfaces/0 = {
 "vertex_count": 713
 }
 
-[sub_resource type="ArrayMesh" id=5]
+[sub_resource type="ArrayMesh" id=160]
 resource_name = "group_3003"
 surfaces/0 = {
 "aabb": AABB( 0, 14.2171, -3.93701, 8.11935, 5.5346, 3.93701 ),
@@ -1753,7 +1753,7 @@ surfaces/0 = {
 "vertex_count": 14
 }
 
-[sub_resource type="ArrayMesh" id=6]
+[sub_resource type="ArrayMesh" id=161]
 resource_name = "group_3004"
 surfaces/0 = {
 "aabb": AABB( -2.27374e-13, 0, -14.6561, 1e-05, 8.4244, 14.6561 ),
@@ -1768,7 +1768,7 @@ surfaces/0 = {
 "vertex_count": 51
 }
 
-[sub_resource type="ArrayMesh" id=7]
+[sub_resource type="ArrayMesh" id=162]
 resource_name = "group_3005"
 surfaces/0 = {
 "aabb": AABB( 0, 11.8777, -3.93701, 9.05512, 2.33943, 3.93702 ),
@@ -1783,7 +1783,7 @@ surfaces/0 = {
 "vertex_count": 16
 }
 
-[sub_resource type="ArrayMesh" id=8]
+[sub_resource type="ArrayMesh" id=163]
 resource_name = "group_3006"
 surfaces/0 = {
 "aabb": AABB( 0, 0, -98.5089, 68.8976, 12.2047, 94.5719 ),
@@ -1798,7 +1798,7 @@ surfaces/0 = {
 "vertex_count": 46
 }
 
-[sub_resource type="ArrayMesh" id=9]
+[sub_resource type="ArrayMesh" id=164]
 resource_name = "group_3007"
 surfaces/0 = {
 "aabb": AABB( 5.90551, 11.8392, -0.787402, 57.0866, 7.91251, 1.00136e-05 ),
@@ -1813,7 +1813,7 @@ surfaces/0 = {
 "vertex_count": 10
 }
 
-[sub_resource type="ArrayMesh" id=10]
+[sub_resource type="ArrayMesh" id=165]
 resource_name = "group_3008"
 surfaces/0 = {
 "aabb": AABB( 59.8425, 11.8392, -3.93701, 9.05512, 2.40071, 3.93701 ),
@@ -1828,7 +1828,7 @@ surfaces/0 = {
 "vertex_count": 14
 }
 
-[sub_resource type="ArrayMesh" id=11]
+[sub_resource type="ArrayMesh" id=166]
 resource_name = "group_3009"
 surfaces/0 = {
 "aabb": AABB( 60.7981, 14.2399, -3.93701, 8.09951, 5.51182, 3.93701 ),
@@ -1843,7 +1843,7 @@ surfaces/0 = {
 "vertex_count": 14
 }
 
-[sub_resource type="ArrayMesh" id=12]
+[sub_resource type="ArrayMesh" id=167]
 resource_name = "group_3010"
 surfaces/0 = {
 "aabb": AABB( 2.63808, 34.2341, -55.1345, 63.6215, 15.6863, 9.85038 ),
@@ -1858,7 +1858,7 @@ surfaces/0 = {
 "vertex_count": 6
 }
 
-[sub_resource type="ArrayMesh" id=13]
+[sub_resource type="ArrayMesh" id=168]
 resource_name = "group_3011"
 surfaces/0 = {
 "aabb": AABB( 1.13687e-13, 32, -91.5089, 1e-05, 19, 44.6276 ),
@@ -1873,7 +1873,7 @@ surfaces/0 = {
 "vertex_count": 23
 }
 
-[sub_resource type="ArrayMesh" id=14]
+[sub_resource type="ArrayMesh" id=169]
 resource_name = "group_3012"
 surfaces/0 = {
 "aabb": AABB( 68.8976, 32, -91.5089, 7.62939e-06, 19, 44.6276 ),
@@ -1888,7 +1888,7 @@ surfaces/0 = {
 "vertex_count": 29
 }
 
-[sub_resource type="ArrayMesh" id=15]
+[sub_resource type="ArrayMesh" id=170]
 resource_name = "group_3014"
 surfaces/0 = {
 "aabb": AABB( -1.13687e-13, 0, -98.5089, 68.8976, 20.1961, 65.5482 ),
@@ -1903,7 +1903,7 @@ surfaces/0 = {
 "vertex_count": 209
 }
 
-[sub_resource type="ArrayMesh" id=16]
+[sub_resource type="ArrayMesh" id=171]
 resource_name = "group_3017"
 surfaces/0 = {
 "aabb": AABB( -1.1811, -1.1811, -3.93701, 71.2598, 7.55132, 5.0517 ),
@@ -1918,7 +1918,7 @@ surfaces/0 = {
 "vertex_count": 114
 }
 
-[sub_resource type="ArrayMesh" id=17]
+[sub_resource type="ArrayMesh" id=172]
 resource_name = "group_3018"
 surfaces/0 = {
 "aabb": AABB( 68.8976, 7.10543e-15, -21.4092, 7.62939e-06, 11.7123, 17.4722 ),
@@ -1933,7 +1933,7 @@ surfaces/0 = {
 "vertex_count": 63
 }
 
-[sub_resource type="ArrayMesh" id=18]
+[sub_resource type="ArrayMesh" id=173]
 resource_name = "group_4"
 surfaces/0 = {
 "aabb": AABB( 0, 0, -23.573, 9.05512, 23.573, 23.573 ),
@@ -1948,7 +1948,7 @@ surfaces/0 = {
 "vertex_count": 241
 }
 
-[sub_resource type="ArrayMesh" id=19]
+[sub_resource type="ArrayMesh" id=174]
 resource_name = "group_4001"
 surfaces/0 = {
 "aabb": AABB( 8.66142, 5.48731, -18.0857, 9.53674e-06, 12.5984, 12.5984 ),
@@ -1963,7 +1963,7 @@ surfaces/0 = {
 "vertex_count": 48
 }
 
-[sub_resource type="ArrayMesh" id=20]
+[sub_resource type="ArrayMesh" id=175]
 resource_name = "group_4002"
 surfaces/0 = {
 "aabb": AABB( 0, 5.48731, -18.0857, 9.05513, 12.5984, 12.5984 ),
@@ -1978,7 +1978,7 @@ surfaces/0 = {
 "vertex_count": 72
 }
 
-[sub_resource type="ArrayMesh" id=21]
+[sub_resource type="ArrayMesh" id=176]
 resource_name = "group_5"
 surfaces/0 = {
 "aabb": AABB( 0, 0, -23.573, 9.05512, 23.573, 23.573 ),
@@ -1993,7 +1993,7 @@ surfaces/0 = {
 "vertex_count": 241
 }
 
-[sub_resource type="ArrayMesh" id=22]
+[sub_resource type="ArrayMesh" id=177]
 resource_name = "group_5001"
 surfaces/0 = {
 "aabb": AABB( 8.66142, 5.48731, -18.0857, 9.53674e-06, 12.5984, 12.5984 ),
@@ -2008,7 +2008,7 @@ surfaces/0 = {
 "vertex_count": 48
 }
 
-[sub_resource type="ArrayMesh" id=23]
+[sub_resource type="ArrayMesh" id=178]
 resource_name = "group_5002"
 surfaces/0 = {
 "aabb": AABB( 0, 5.48731, -18.0857, 9.05513, 12.5984, 12.5984 ),
@@ -2023,7 +2023,7 @@ surfaces/0 = {
 "vertex_count": 72
 }
 
-[sub_resource type="ArrayMesh" id=24]
+[sub_resource type="ArrayMesh" id=179]
 resource_name = "group_6"
 surfaces/0 = {
 "aabb": AABB( 0, 0, -23.573, 9.05512, 23.573, 23.573 ),
@@ -2038,7 +2038,7 @@ surfaces/0 = {
 "vertex_count": 241
 }
 
-[sub_resource type="ArrayMesh" id=25]
+[sub_resource type="ArrayMesh" id=180]
 resource_name = "group_6001"
 surfaces/0 = {
 "aabb": AABB( 8.66142, 5.48731, -18.0857, 9.53674e-06, 12.5984, 12.5984 ),
@@ -2053,7 +2053,7 @@ surfaces/0 = {
 "vertex_count": 48
 }
 
-[sub_resource type="ArrayMesh" id=26]
+[sub_resource type="ArrayMesh" id=181]
 resource_name = "group_6002"
 surfaces/0 = {
 "aabb": AABB( 0, 5.48731, -18.0857, 9.05513, 12.5984, 12.5984 ),
@@ -2068,7 +2068,7 @@ surfaces/0 = {
 "vertex_count": 72
 }
 
-[sub_resource type="ArrayMesh" id=27]
+[sub_resource type="ArrayMesh" id=182]
 resource_name = "group_7"
 surfaces/0 = {
 "aabb": AABB( -1.13687e-13, -7.10543e-15, -124, 68.8976, 13.0188, 118.094 ),
@@ -2083,7 +2083,7 @@ surfaces/0 = {
 "vertex_count": 100
 }
 
-[sub_resource type="ArrayMesh" id=28]
+[sub_resource type="ArrayMesh" id=183]
 resource_name = "group_35"
 surfaces/0 = {
 "aabb": AABB( 0, 0, -37.3357, 569.2, 84.4841, 37.3357 ),
@@ -2098,7 +2098,7 @@ surfaces/0 = {
 "vertex_count": 1020
 }
 
-[sub_resource type="ArrayMesh" id=29]
+[sub_resource type="ArrayMesh" id=184]
 resource_name = "group_36"
 surfaces/0 = {
 "aabb": AABB( 0, 0, -80.8892, 490.965, 92.4068, 80.8892 ),
@@ -2113,7 +2113,7 @@ surfaces/0 = {
 "vertex_count": 948
 }
 
-[sub_resource type="ArrayMesh" id=30]
+[sub_resource type="ArrayMesh" id=185]
 resource_name = "group_9"
 surfaces/0 = {
 "aabb": AABB( -1.42108e-14, 8.97258, -39.0663, 73.6221, 30.0863, 30.0937 ),
@@ -2128,7 +2128,7 @@ surfaces/0 = {
 "vertex_count": 3049
 }
 
-[sub_resource type="ArrayMesh" id=31]
+[sub_resource type="ArrayMesh" id=186]
 resource_name = "group_9001"
 surfaces/0 = {
 "aabb": AABB( 7.27596e-12, 16.1534, -13.3716, 73.6221, 5.89539, 2.44195 ),
@@ -2143,7 +2143,7 @@ surfaces/0 = {
 "vertex_count": 15
 }
 
-[sub_resource type="ArrayMesh" id=32]
+[sub_resource type="ArrayMesh" id=187]
 resource_name = "group_9002"
 surfaces/0 = {
 "aabb": AABB( 7.27596e-12, 10.9296, -22.0487, 73.622, 2.44195, 5.89539 ),
@@ -2158,7 +2158,7 @@ surfaces/0 = {
 "vertex_count": 10
 }
 
-[sub_resource type="ArrayMesh" id=33]
+[sub_resource type="ArrayMesh" id=188]
 resource_name = "group_9003"
 surfaces/0 = {
 "aabb": AABB( 6.83542e-12, 10.9296, -31.8781, 73.6221, 2.44195, 5.89539 ),
@@ -2173,7 +2173,7 @@ surfaces/0 = {
 "vertex_count": 10
 }
 
-[sub_resource type="ArrayMesh" id=34]
+[sub_resource type="ArrayMesh" id=189]
 resource_name = "group_9004"
 surfaces/0 = {
 "aabb": AABB( 7.26175e-12, 34.6599, -22.0487, 73.6221, 2.44195, 5.89539 ),
@@ -2188,7 +2188,7 @@ surfaces/0 = {
 "vertex_count": 10
 }
 
-[sub_resource type="ArrayMesh" id=35]
+[sub_resource type="ArrayMesh" id=190]
 resource_name = "group_9005"
 surfaces/0 = {
 "aabb": AABB( 7.27596e-12, 30.6883, -13.3716, 73.6221, 1.18987, 0.91301 ),
@@ -2215,7 +2215,7 @@ surfaces/1 = {
 "vertex_count": 11
 }
 
-[sub_resource type="ArrayMesh" id=36]
+[sub_resource type="ArrayMesh" id=191]
 resource_name = "group_9006"
 surfaces/0 = {
 "aabb": AABB( 6.82121e-12, 34.6599, -31.8781, 73.622, 2.44195, 5.89539 ),
@@ -2230,7 +2230,7 @@ surfaces/0 = {
 "vertex_count": 10
 }
 
-[sub_resource type="ArrayMesh" id=37]
+[sub_resource type="ArrayMesh" id=192]
 resource_name = "group_9007"
 surfaces/0 = {
 "aabb": AABB( 6.82121e-12, 16.1534, -37.1009, 73.6221, 5.8879, 2.44096 ),
@@ -2245,7 +2245,7 @@ surfaces/0 = {
 "vertex_count": 12
 }
 
-[sub_resource type="ArrayMesh" id=38]
+[sub_resource type="ArrayMesh" id=193]
 resource_name = "group_9008"
 surfaces/0 = {
 "aabb": AABB( 6.82121e-12, 25.9902, -37.1009, 73.6221, 4.69805, 1.52796 ),
@@ -2272,7 +2272,7 @@ surfaces/1 = {
 "vertex_count": 11
 }
 
-[sub_resource type="ArrayMesh" id=39]
+[sub_resource type="ArrayMesh" id=194]
 resource_name = "group_9009"
 surfaces/0 = {
 "aabb": AABB( 69.685, 5.90551, -42.126, 5.11811, 36.2205, 36.2205 ),
@@ -2287,7 +2287,7 @@ surfaces/0 = {
 "vertex_count": 144
 }
 
-[sub_resource type="ArrayMesh" id=40]
+[sub_resource type="ArrayMesh" id=195]
 resource_name = "group_9010"
 surfaces/0 = {
 "aabb": AABB( 69.685, -4.54747e-13, -48.0315, 5.11811, 48.0315, 48.0315 ),
@@ -2302,7 +2302,7 @@ surfaces/0 = {
 "vertex_count": 318
 }
 
-[sub_resource type="ArrayMesh" id=41]
+[sub_resource type="ArrayMesh" id=196]
 resource_name = "group_9011"
 surfaces/0 = {
 "aabb": AABB( 2.72848e-12, 5.90551, -42.126, 5.11811, 36.2205, 36.2205 ),
@@ -2317,7 +2317,7 @@ surfaces/0 = {
 "vertex_count": 144
 }
 
-[sub_resource type="ArrayMesh" id=42]
+[sub_resource type="ArrayMesh" id=197]
 resource_name = "group_9012"
 surfaces/0 = {
 "aabb": AABB( 2.72848e-12, -4.54747e-13, -48.0315, 5.11812, 48.0315, 48.0315 ),
@@ -2332,7 +2332,7 @@ surfaces/0 = {
 "vertex_count": 348
 }
 
-[sub_resource type="ArrayMesh" id=145]
+[sub_resource type="ArrayMesh" id=198]
 resource_name = "Cube"
 surfaces/0 = {
 "aabb": AABB( 71.3521, -0.010545, -29.0713, 0.739662, 2.35349, 0.746269 ),
@@ -2395,7 +2395,7 @@ surfaces/4 = {
 "vertex_count": 136
 }
 
-[sub_resource type="Skin" id=146]
+[sub_resource type="Skin" id=199]
 resource_name = "Skin3"
 bind_count = 12
 bind/0/name = "Bone"
@@ -2435,7 +2435,7 @@ bind/11/name = "Bone.011"
 bind/11/bone = -1
 bind/11/pose = Transform( 2.04594, 0.118258, -2.07071, 0.0831167, -2.91096, -0.0841224, -2.07242, -3.22413e-07, -2.04763, -206.749, -6.58173, 89.7133 )
 
-[sub_resource type="ArrayMesh" id=147]
+[sub_resource type="ArrayMesh" id=200]
 resource_name = "Cube001"
 surfaces/0 = {
 "aabb": AABB( 76.218, 0.0126005, -38.0212, 0.612236, 2.23608, 0.780987 ),
@@ -2498,7 +2498,7 @@ surfaces/4 = {
 "vertex_count": 136
 }
 
-[sub_resource type="Skin" id=148]
+[sub_resource type="Skin" id=201]
 resource_name = "Skin4"
 bind_count = 12
 bind/0/name = "Bone"
@@ -2538,7 +2538,7 @@ bind/11/name = "Bone.011"
 bind/11/bone = -1
 bind/11/pose = Transform( -1.78735, 0.124467, -2.48843, -0.0726109, -3.06381, -0.101093, -2.49049, -3.35637e-07, 1.78883, 42.5458, 3.6153, 257.736 )
 
-[sub_resource type="Animation" id=149]
+[sub_resource type="Animation" id=202]
 resource_name = "Scav1Alert"
 length = 2.5
 tracks/0/type = "transform"
@@ -2626,7 +2626,7 @@ tracks/11/imported = true
 tracks/11/enabled = true
 tracks/11/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2.5, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=150]
+[sub_resource type="Animation" id=203]
 resource_name = "Scav1Idle"
 length = 2.5
 tracks/0/type = "transform"
@@ -3699,7 +3699,7 @@ bones/13/enabled = true
 bones/13/bound_children = [  ]
 
 [node name="BoneAttachment" type="BoneAttachment" parent="ClawArm1/Skeleton"]
-transform = Transform( 0.299534, 0.171775, 0.938495, 0.858771, 0.380025, -0.343645, -0.415682, 0.908886, -0.0336844, -59.8777, 1.28593, 90.2074 )
+transform = Transform( 0.299534, 0.171775, 0.938495, 0.858771, 0.380025, -0.343646, -0.415682, 0.908887, -0.0336845, -59.8777, 1.28592, 90.2073 )
 bone_name = "TopClaw"
 
 [node name="TopClaw001" type="MeshInstance" parent="ClawArm1/Skeleton/BoneAttachment"]
@@ -3708,7 +3708,7 @@ mesh = SubResource( 137 )
 material/0 = null
 
 [node name="BoneAttachment2" type="BoneAttachment" parent="ClawArm1/Skeleton"]
-transform = Transform( -0.299074, -0.925489, -0.232433, -0.858766, 0.367242, -0.357287, 0.416024, 0.0927502, -0.904611, -60.21, 1.28206, 89.9602 )
+transform = Transform( -0.299074, -0.925489, -0.232433, -0.858766, 0.367242, -0.357287, 0.416025, 0.09275, -0.904612, -60.21, 1.28205, 89.9601 )
 bone_name = "BottomClaw"
 
 [node name="BottomClaw001" type="MeshInstance" parent="ClawArm1/Skeleton/BoneAttachment2"]
@@ -3717,7 +3717,7 @@ mesh = SubResource( 138 )
 material/0 = null
 
 [node name="BoneAttachment3" type="BoneAttachment" parent="ClawArm1/Skeleton"]
-transform = Transform( -0.801361, -0.174, 0.572315, -0.0099913, 0.960518, 0.278035, -0.598097, 0.217088, -0.771461, -59.9821, 1.46204, 89.9979 )
+transform = Transform( -0.801362, -0.174, 0.572315, -0.00999123, 0.960518, 0.278035, -0.598098, 0.217089, -0.771461, -59.9821, 1.46203, 89.9979 )
 bone_name = "RightClaw"
 
 [node name="RightClaw001" type="MeshInstance" parent="ClawArm1/Skeleton/BoneAttachment3"]
@@ -3726,7 +3726,7 @@ mesh = SubResource( 139 )
 material/0 = null
 
 [node name="BoneAttachment4" type="BoneAttachment" parent="ClawArm1/Skeleton"]
-transform = Transform( 0.803164, -0.580357, 0.134584, 0.00820926, -0.215102, -0.976556, 0.595701, 0.78544, -0.167997, -60.1057, 1.10597, 90.1696 )
+transform = Transform( 0.803165, -0.580357, 0.134584, 0.00820919, -0.215102, -0.976557, 0.595702, 0.785441, -0.167998, -60.1057, 1.10597, 90.1696 )
 bone_name = "LeftClaw"
 
 [node name="RightClaw002" type="MeshInstance" parent="ClawArm1/Skeleton/BoneAttachment4"]
@@ -3831,17 +3831,17 @@ transform = Transform( -3.02792e-09, 0, -0.0254, 0, 0.0254, 0, 0.0254, 0, -3.027
 
 [node name="group_2" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 72.0079, 0, -17.0897 )
-mesh = SubResource( 1 )
+mesh = SubResource( 156 )
 material/0 = null
 
 [node name="group_2001" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 72.0079, 0, -17.0897 )
-mesh = SubResource( 2 )
+mesh = SubResource( 157 )
 material/0 = null
 
 [node name="group_2002" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 72.0079, 0, -17.0897 )
-mesh = SubResource( 3 )
+mesh = SubResource( 158 )
 material/0 = null
 
 [node name="group_3" type="Spatial" parent="Truck/group_1"]
@@ -3849,7 +3849,7 @@ transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 1.3937, 14.2898, -1.3
 
 [node name="group_3001" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 1.3937, 14.2898, -1.31532 )
-mesh = SubResource( 4 )
+mesh = SubResource( 159 )
 material/0 = null
 
 [node name="group_3002" type="Spatial" parent="Truck/group_1"]
@@ -3857,52 +3857,52 @@ transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 1.3937, 14.2898, -1.3
 
 [node name="group_3003" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 1.3937, 14.2898, -1.31532 )
-mesh = SubResource( 5 )
+mesh = SubResource( 160 )
 material/0 = null
 
 [node name="group_3004" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 1.3937, 14.2898, -1.31532 )
-mesh = SubResource( 6 )
+mesh = SubResource( 161 )
 material/0 = null
 
 [node name="group_3005" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 1.3937, 14.2898, -1.31532 )
-mesh = SubResource( 7 )
+mesh = SubResource( 162 )
 material/0 = null
 
 [node name="group_3006" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 1.3937, 14.2898, -1.31532 )
-mesh = SubResource( 8 )
+mesh = SubResource( 163 )
 material/0 = null
 
 [node name="group_3007" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 1.3937, 14.2898, -1.31532 )
-mesh = SubResource( 9 )
+mesh = SubResource( 164 )
 material/0 = null
 
 [node name="group_3008" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 1.3937, 14.2898, -1.31532 )
-mesh = SubResource( 10 )
+mesh = SubResource( 165 )
 material/0 = null
 
 [node name="group_3009" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 1.3937, 14.2898, -1.31532 )
-mesh = SubResource( 11 )
+mesh = SubResource( 166 )
 material/0 = null
 
 [node name="group_3010" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 1.3937, 14.2898, -1.31532 )
-mesh = SubResource( 12 )
+mesh = SubResource( 167 )
 material/0 = null
 
 [node name="group_3011" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 1.3937, 14.2898, -1.31532 )
-mesh = SubResource( 13 )
+mesh = SubResource( 168 )
 material/0 = null
 
 [node name="group_3012" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 1.3937, 14.2898, -1.31532 )
-mesh = SubResource( 14 )
+mesh = SubResource( 169 )
 material/0 = null
 
 [node name="group_3013" type="Spatial" parent="Truck/group_1"]
@@ -3910,7 +3910,7 @@ transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 1.3937, 14.2898, -1.3
 
 [node name="group_3014" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 1.3937, 14.2898, -1.31532 )
-mesh = SubResource( 15 )
+mesh = SubResource( 170 )
 material/0 = null
 
 [node name="group_3015" type="Spatial" parent="Truck/group_1"]
@@ -3921,12 +3921,12 @@ transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 1.3937, 14.2898, -1.3
 
 [node name="group_3017" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 1.3937, 14.2898, -1.31532 )
-mesh = SubResource( 16 )
+mesh = SubResource( 171 )
 material/0 = null
 
 [node name="group_3018" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 1.3937, 14.2898, -1.31532 )
-mesh = SubResource( 17 )
+mesh = SubResource( 172 )
 material/0 = null
 
 [node name="group_3019" type="Spatial" parent="Truck/group_1"]
@@ -3937,57 +3937,57 @@ transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 1.3937, 14.2898, -1.3
 
 [node name="group_4" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 72.0079, 0, -198.735 )
-mesh = SubResource( 18 )
+mesh = SubResource( 173 )
 material/0 = null
 
 [node name="group_4001" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 72.0079, 0, -198.735 )
-mesh = SubResource( 19 )
+mesh = SubResource( 174 )
 material/0 = null
 
 [node name="group_4002" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 72.0079, 0, -198.735 )
-mesh = SubResource( 20 )
+mesh = SubResource( 175 )
 material/0 = null
 
 [node name="group_5" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( -1.18, 0, 1.03159e-07, 0, 1.18, 0, -1.03159e-07, 0, -1.18, 12.0787, 0, -44.9699 )
-mesh = SubResource( 21 )
+mesh = SubResource( 176 )
 material/0 = null
 
 [node name="group_5001" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( -1.18, 0, 1.03159e-07, 0, 1.18, 0, -1.03159e-07, 0, -1.18, 12.0787, 0, -44.9699 )
-mesh = SubResource( 22 )
+mesh = SubResource( 177 )
 material/0 = null
 
 [node name="group_5002" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( -1.18, 0, 1.03159e-07, 0, 1.18, 0, -1.03159e-07, 0, -1.18, 12.0787, 0, -44.9699 )
-mesh = SubResource( 23 )
+mesh = SubResource( 178 )
 material/0 = null
 
 [node name="group_6" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( -1.18, 0, 1.03159e-07, 0, 1.18, 0, -1.03159e-07, 0, -1.18, 12.0787, 0, -226.615 )
-mesh = SubResource( 24 )
+mesh = SubResource( 179 )
 material/0 = null
 
 [node name="group_6001" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( -1.18, 0, 1.03159e-07, 0, 1.18, 0, -1.03159e-07, 0, -1.18, 12.0787, 0, -226.615 )
-mesh = SubResource( 25 )
+mesh = SubResource( 180 )
 material/0 = null
 
 [node name="group_6002" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( -1.18, 0, 1.03159e-07, 0, 1.18, 0, -1.03159e-07, 0, -1.18, 12.0787, 0, -226.615 )
-mesh = SubResource( 26 )
+mesh = SubResource( 181 )
 material/0 = null
 
 [node name="group_7" type="MeshInstance" parent="Truck/group_1"]
 transform = Transform( 1.18, 0, 0, 0, 1.18, 0, 0, 0, 1.18, 11.4226, 19.6839, -113.728 )
-mesh = SubResource( 27 )
+mesh = SubResource( 182 )
 material/0 = null
 
 [node name="group_35" type="MeshInstance" parent="Truck"]
 transform = Transform( 0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, 1.31441, -0.820777, 1.96482 )
-mesh = SubResource( 28 )
+mesh = SubResource( 183 )
 material/0 = null
 
 [node name="group_35001" type="Spatial" parent="Truck/group_35"]
@@ -3995,7 +3995,7 @@ transform = Transform( 39.3701, 0, 0, 0, 39.3701, 0, 0, 0, 39.3701, 85070.4, 270
 
 [node name="group_36" type="MeshInstance" parent="Truck"]
 transform = Transform( 0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, 1.31147, -1.01318, 0.665865 )
-mesh = SubResource( 29 )
+mesh = SubResource( 184 )
 material/0 = null
 
 [node name="group_36001" type="Spatial" parent="Truck/group_36"]
@@ -4003,69 +4003,69 @@ transform = Transform( 39.3701, 0, 0, 0, 39.3701, 0, 0, 0, 39.3701, 85066, -19.9
 
 [node name="group_9" type="MeshInstance" parent="Truck"]
 transform = Transform( 8.17537e-09, -0.0254, 0, 0.02286, 9.08375e-09, 0, 0, 0, 0.0254, 1.64782, 0.658623, 1.44628 )
-mesh = SubResource( 30 )
+mesh = SubResource( 185 )
 material/0 = null
 
 [node name="group_9001" type="MeshInstance" parent="Truck/group_9"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.21229e-05, 0.000610352, 0.00012207 )
-mesh = SubResource( 31 )
+mesh = SubResource( 186 )
 material/0 = null
 
 [node name="group_9002" type="MeshInstance" parent="Truck/group_9"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.21229e-05, 0.000610352, 0.00012207 )
-mesh = SubResource( 32 )
+mesh = SubResource( 187 )
 material/0 = null
 
 [node name="group_9003" type="MeshInstance" parent="Truck/group_9"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.21229e-05, 0.000610352, 0.00012207 )
-mesh = SubResource( 33 )
+mesh = SubResource( 188 )
 material/0 = null
 
 [node name="group_9004" type="MeshInstance" parent="Truck/group_9"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.21229e-05, 0.000610352, 0.00012207 )
-mesh = SubResource( 34 )
+mesh = SubResource( 189 )
 material/0 = null
 
 [node name="group_9005" type="MeshInstance" parent="Truck/group_9"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.21229e-05, 0.000610352, 0.00012207 )
-mesh = SubResource( 35 )
+mesh = SubResource( 190 )
 material/0 = null
 material/1 = null
 
 [node name="group_9006" type="MeshInstance" parent="Truck/group_9"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.21229e-05, 0.000610352, 0.00012207 )
-mesh = SubResource( 36 )
+mesh = SubResource( 191 )
 material/0 = null
 
 [node name="group_9007" type="MeshInstance" parent="Truck/group_9"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.21229e-05, 0.000610352, 0.00012207 )
-mesh = SubResource( 37 )
+mesh = SubResource( 192 )
 material/0 = null
 
 [node name="group_9008" type="MeshInstance" parent="Truck/group_9"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.21229e-05, 0.000610352, 0.00012207 )
-mesh = SubResource( 38 )
+mesh = SubResource( 193 )
 material/0 = null
 material/1 = null
 
 [node name="group_9009" type="MeshInstance" parent="Truck/group_9"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.21229e-05, 0.000610352, 0.00012207 )
-mesh = SubResource( 39 )
+mesh = SubResource( 194 )
 material/0 = null
 
 [node name="group_9010" type="MeshInstance" parent="Truck/group_9"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.21229e-05, 0.000610352, 0.00012207 )
-mesh = SubResource( 40 )
+mesh = SubResource( 195 )
 material/0 = null
 
 [node name="group_9011" type="MeshInstance" parent="Truck/group_9"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.21229e-05, 0.000610352, 0.00012207 )
-mesh = SubResource( 41 )
+mesh = SubResource( 196 )
 material/0 = null
 
 [node name="group_9012" type="MeshInstance" parent="Truck/group_9"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.21229e-05, 0.000610352, 0.00012207 )
-mesh = SubResource( 42 )
+mesh = SubResource( 197 )
 material/0 = null
 
 [node name="ScavArmature1" type="Spatial" parent="."]
@@ -4134,8 +4134,8 @@ bones/11/enabled = true
 bones/11/bound_children = [  ]
 
 [node name="Cube" type="MeshInstance" parent="ScavArmature1/Skeleton3"]
-mesh = SubResource( 145 )
-skin = SubResource( 146 )
+mesh = SubResource( 198 )
+skin = SubResource( 199 )
 material/0 = null
 material/1 = null
 material/2 = null
@@ -4208,8 +4208,8 @@ bones/11/enabled = true
 bones/11/bound_children = [  ]
 
 [node name="Cube001" type="MeshInstance" parent="ScavArmature2/Skeleton4"]
-mesh = SubResource( 147 )
-skin = SubResource( 148 )
+mesh = SubResource( 200 )
+skin = SubResource( 201 )
 material/0 = null
 material/1 = null
 material/2 = null
@@ -4226,8 +4226,8 @@ anims/ScavArmature2Action = ExtResource( 3 )
 anims/TruckAction = ExtResource( 2 )
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
-anims/Scav1Alert = SubResource( 149 )
-anims/Scav1Idle = SubResource( 150 )
+anims/Scav1Alert = SubResource( 202 )
+anims/Scav1Idle = SubResource( 203 )
 anims/Scav2Alert = SubResource( 151 )
 anims/Scav2Idle = SubResource( 152 )
 anims/ScavArmature1Action = SubResource( 153 )
