@@ -9,6 +9,7 @@ public class MusicPlayerControl : Node
     public const int TGuitarPluck = 1<<3;
     public const int TGuitarStrum = 1<<4;
     public const int TTrashLid = 1<<5;
+    public const int TSynth = 1<<6;
 
     AudioStreamPlayer drums;
 
@@ -21,6 +22,8 @@ public class MusicPlayerControl : Node
     AudioStreamPlayer guitarStrum;
 
     AudioStreamPlayer trashLid;
+
+    AudioStreamPlayer synth;
 
     private AudioStreamPlayer[] _allPlayers;
 
@@ -37,6 +40,7 @@ public class MusicPlayerControl : Node
         guitarPluck = GetNode<AudioStreamPlayer>("MGuitarPluck");
         guitarStrum = GetNode<AudioStreamPlayer>("MGuitarStrum");
         trashLid = GetNode<AudioStreamPlayer>("MTrashlid");
+        synth = GetNode<AudioStreamPlayer>("MSynth");
 
         _allPlayers = new[]{
             drums,
@@ -44,7 +48,8 @@ public class MusicPlayerControl : Node
             strings,
             guitarPluck,
             guitarStrum,
-            trashLid
+            trashLid,
+            synth
         };
 
         ToggleTracks(_startingTrackMask);
@@ -77,6 +82,7 @@ public class MusicPlayerControl : Node
         ToggleTrack(guitarPluck, trackMask, TGuitarPluck);
         ToggleTrack(guitarStrum, trackMask, TGuitarStrum);
         ToggleTrack(trashLid, trackMask, TTrashLid);
+        ToggleTrack(synth, trackMask, TSynth);
         _lastTrackMask = _queuedTrackMask;
     }
 

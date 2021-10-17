@@ -1,32 +1,26 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://textures/LiberationSans-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://textures/LiberationSans-Regular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://src/CreditsController.cs" type="Script" id=3]
-[ext_resource path="res://Audio/Music/HomesteadLoops-GuitarPluck.wav" type="AudioStream" id=4]
-[ext_resource path="res://Audio/Music/HomesteadLoops-Piano.wav" type="AudioStream" id=5]
-[ext_resource path="res://Audio/Music/HomesteadLoops-Trashlid.wav" type="AudioStream" id=6]
-[ext_resource path="res://Audio/Music/HomesteadLoops-Drums.wav" type="AudioStream" id=7]
-[ext_resource path="res://Audio/Music/HomesteadLoops-GuitarStrum.wav" type="AudioStream" id=8]
-[ext_resource path="res://Audio/Music/HomesteadLoops-Strings.wav" type="AudioStream" id=9]
-[ext_resource path="res://src/MusicPlayerControl.cs" type="Script" id=10]
+[ext_resource path="res://stage/Music.tscn" type="PackedScene" id=4]
 [ext_resource path="res://stage/Quit.tscn" type="PackedScene" id=11]
 [ext_resource path="res://textures/Wildcard2.png" type="Texture" id=12]
 [ext_resource path="res://textures/lib_reg_font.tres" type="DynamicFont" id=13]
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=1]
 size = 60
 font_data = ExtResource( 1 )
 
 [sub_resource type="Theme" id=2]
-default_font = SubResource( 3 )
+default_font = SubResource( 1 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=3]
 size = 28
 font_data = ExtResource( 2 )
 
-[sub_resource type="Theme" id=5]
-default_font = SubResource( 4 )
+[sub_resource type="Theme" id=4]
+default_font = SubResource( 3 )
 
 [node name="CreditsScene" type="Node2D"]
 
@@ -39,44 +33,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Music" type="Node" parent="."]
-script = ExtResource( 10 )
-
-[node name="MDrums" type="AudioStreamPlayer" parent="Music"]
-stream = ExtResource( 7 )
-volume_db = -80.0
-autoplay = true
-bus = "M-Drums"
-
-[node name="MPiano" type="AudioStreamPlayer" parent="Music"]
-stream = ExtResource( 5 )
-volume_db = -80.0
-autoplay = true
-bus = "M-Drums"
-
-[node name="MStrings" type="AudioStreamPlayer" parent="Music"]
-stream = ExtResource( 9 )
-volume_db = -80.0
-autoplay = true
-bus = "M-Drums"
-
-[node name="MGuitarPluck" type="AudioStreamPlayer" parent="Music"]
-stream = ExtResource( 4 )
-volume_db = -80.0
-autoplay = true
-bus = "M-Drums"
-
-[node name="MGuitarStrum" type="AudioStreamPlayer" parent="Music"]
-stream = ExtResource( 8 )
-volume_db = -80.0
-autoplay = true
-bus = "M-Drums"
-
-[node name="MTrashlid" type="AudioStreamPlayer" parent="Music"]
-stream = ExtResource( 6 )
-volume_db = -80.0
-autoplay = true
-bus = "M-Drums"
+[node name="Music" parent="." instance=ExtResource( 4 )]
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchor_right = 1.0
@@ -134,7 +91,7 @@ margin_right = 938.0
 margin_bottom = 137.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = SubResource( 5 )
+theme = SubResource( 4 )
 text = "Programming, Sound
 Production, Modelling
 Protaganist
@@ -151,7 +108,7 @@ margin_right = 1900.0
 margin_bottom = 137.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = SubResource( 5 )
+theme = SubResource( 4 )
 text = "ataboo.itch.io
 Heather Camp
 Jesse Harlton
@@ -167,7 +124,7 @@ margin_right = 1900.0
 margin_bottom = 583.0
 size_flags_horizontal = 3
 size_flags_vertical = 1
-theme = SubResource( 5 )
+theme = SubResource( 4 )
 text = "Created with Godot for WildJam #38."
 align = 1
 valign = 1
@@ -183,7 +140,7 @@ texture = ExtResource( 12 )
 [node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
 margin_top = 676.0
 margin_right = 1900.0
-margin_bottom = 845.0
+margin_bottom = 829.0
 custom_constants/margin_top = 137
 custom_constants/margin_left = -157
 __meta__ = {
@@ -194,13 +151,12 @@ __meta__ = {
 margin_left = -157.0
 margin_top = 137.0
 margin_right = 1900.0
-margin_bottom = 169.0
+margin_bottom = 153.0
 size_flags_vertical = 1
-theme = SubResource( 5 )
+theme = SubResource( 4 )
 custom_fonts/font = ExtResource( 13 )
 custom_constants/line_spacing = 0
-text = "(Assuming subtitles and 
-credits don't count)"
+text = "(Assuming credits don't count)"
 align = 1
 valign = 1
 __meta__ = {

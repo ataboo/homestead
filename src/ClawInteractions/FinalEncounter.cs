@@ -112,7 +112,7 @@ public class FinalEncounter : Area
     async void RapidsMovementAction(Canoe c) {
         c.SetAutopilotTarget(_rapidsPullPos, true);
 
-        _musicPlayer.QueueTrackChange((MusicPlayerControl.TStrings | MusicPlayerControl.TTrashLid));
+        _musicPlayer.QueueTrackChange((MusicPlayerControl.TStrings | MusicPlayerControl.TTrashLid | MusicPlayerControl.TSynth));
 
         while((c.GlobalTransform.origin - _rapidsPullPos.GlobalTransform.origin).Length() > 2f) {
             await ToSignal(GetTree().CreateTimer(0.1f), "timeout");

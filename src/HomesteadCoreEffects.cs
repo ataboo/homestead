@@ -23,11 +23,6 @@ public class HomesteadCoreEffects : AudioStreamPlayer3D
 
     private Particles _smokeParticles;
 
-    // Declare member variables here. Examples:
-    // private int a = 2;
-    // private string b = "text";
-
-    // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
         _coreMeshes = new MeshInstance[] {
@@ -43,7 +38,7 @@ public class HomesteadCoreEffects : AudioStreamPlayer3D
         _secondAudio = GetNode<AudioStreamPlayer3D>("SecondAudio");
 
         _smokeParticles = GetNode<Particles>("CoreSmoke");
-
+        
         this.Stream = running;
         this.Play(0);
     }
@@ -58,10 +53,14 @@ public class HomesteadCoreEffects : AudioStreamPlayer3D
         }
         this.Stream = shutdown;
         this.Play();
+
+        GetTree().CallGroup("Villagers", "SetLookPos", GlobalTransform.origin);
     }
 
     public void Startup() {
         StartupActions();
+        
+        GetTree().CallGroup("Villagers", "ClearLookPos");
     }
 
     public void Explode() {
